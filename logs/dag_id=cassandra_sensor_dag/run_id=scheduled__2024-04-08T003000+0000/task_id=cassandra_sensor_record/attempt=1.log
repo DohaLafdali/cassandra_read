@@ -1,0 +1,1057 @@
+[2024-04-08T14:58:00.603+0000] {taskinstance.py:1979} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: cassandra_sensor_dag.cassandra_sensor_record scheduled__2024-04-08T00:30:00+00:00 [queued]>
+[2024-04-08T14:58:00.987+0000] {taskinstance.py:1979} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: cassandra_sensor_dag.cassandra_sensor_record scheduled__2024-04-08T00:30:00+00:00 [queued]>
+[2024-04-08T14:58:01.016+0000] {taskinstance.py:2193} INFO - Starting attempt 1 of 2
+[2024-04-08T14:58:02.709+0000] {taskinstance.py:2217} INFO - Executing <Task(CassandraRecordSensor): cassandra_sensor_record> on 2024-04-08 00:30:00+00:00
+[2024-04-08T14:58:02.917+0000] {standard_task_runner.py:60} INFO - Started process 1055 to run task
+[2024-04-08T14:58:03.021+0000] {standard_task_runner.py:87} INFO - Running: ['***', 'tasks', 'run', 'cassandra_sensor_dag', 'cassandra_sensor_record', 'scheduled__2024-04-08T00:30:00+00:00', '--job-id', '104', '--raw', '--subdir', 'DAGS_FOLDER/test.py', '--cfg-path', '/tmp/tmpf98h5pac']
+[2024-04-08T14:58:03.180+0000] {standard_task_runner.py:88} INFO - Job 104: Subtask cassandra_sensor_record
+[2024-04-08T14:58:04.522+0000] {task_command.py:423} INFO - Running <TaskInstance: cassandra_sensor_dag.cassandra_sensor_record scheduled__2024-04-08T00:30:00+00:00 [running]> on host c2d2cc8ff432
+[2024-04-08T14:58:05.819+0000] {taskinstance.py:2513} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='cassandra_sensor_dag' AIRFLOW_CTX_TASK_ID='cassandra_sensor_record' AIRFLOW_CTX_EXECUTION_DATE='2024-04-08T00:30:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2024-04-08T00:30:00+00:00'
+[2024-04-08T14:58:05.854+0000] {record.py:71} INFO - Sensor check existence of record: ['user_id', 'age', 'email', 'name']
+[2024-04-08T14:58:06.065+0000] {base.py:83} INFO - Using connection ID 'cassandra_conn' for task execution.
+[2024-04-08T14:58:06.119+0000] {warnings.py:109} WARNING - /home/***/.local/lib/python3.8/site-packages/***/providers/apache/cassandra/hooks/cassandra.py:120: DeprecationWarning: Legacy execution parameters will be removed in 4.0. Consider using execution profiles.
+  self.cluster = Cluster(**conn_config)
+
+[2024-04-08T14:58:06.893+0000] {cassandra.py:128} WARNING - Downgrading core protocol version from 66 to 65 for 172.21.0.4:9042. To avoid this, it is best practice to explicitly set Cluster(protocol_version) to the version supported by your cluster. http://datastax.github.io/python-driver/api/cassandra/cluster.html#cassandra.cluster.Cluster.protocol_version
+[2024-04-08T14:58:06.920+0000] {cassandra.py:128} WARNING - Downgrading core protocol version from 65 to 5 for 172.21.0.4:9042. To avoid this, it is best practice to explicitly set Cluster(protocol_version) to the version supported by your cluster. http://datastax.github.io/python-driver/api/cassandra/cluster.html#cassandra.cluster.Cluster.protocol_version
+[2024-04-08T14:59:07.345+0000] {record.py:71} INFO - Sensor check existence of record: ['user_id', 'age', 'email', 'name']
+[2024-04-08T14:59:07.439+0000] {base.py:83} INFO - Using connection ID 'cassandra_conn' for task execution.
+[2024-04-08T14:59:07.466+0000] {cassandra.py:128} WARNING - Downgrading core protocol version from 66 to 65 for 172.21.0.4:9042. To avoid this, it is best practice to explicitly set Cluster(protocol_version) to the version supported by your cluster. http://datastax.github.io/python-driver/api/cassandra/cluster.html#cassandra.cluster.Cluster.protocol_version
+[2024-04-08T14:59:07.490+0000] {cassandra.py:128} WARNING - Downgrading core protocol version from 65 to 5 for 172.21.0.4:9042. To avoid this, it is best practice to explicitly set Cluster(protocol_version) to the version supported by your cluster. http://datastax.github.io/python-driver/api/cassandra/cluster.html#cassandra.cluster.Cluster.protocol_version
+[2024-04-08T15:00:08.078+0000] {record.py:71} INFO - Sensor check existence of record: ['user_id', 'age', 'email', 'name']
+[2024-04-08T15:00:08.329+0000] {base.py:83} INFO - Using connection ID 'cassandra_conn' for task execution.
+[2024-04-08T15:00:08.518+0000] {cassandra.py:128} WARNING - Downgrading core protocol version from 66 to 65 for 172.21.0.4:9042. To avoid this, it is best practice to explicitly set Cluster(protocol_version) to the version supported by your cluster. http://datastax.github.io/python-driver/api/cassandra/cluster.html#cassandra.cluster.Cluster.protocol_version
+[2024-04-08T15:00:08.579+0000] {cassandra.py:128} WARNING - Downgrading core protocol version from 65 to 5 for 172.21.0.4:9042. To avoid this, it is best practice to explicitly set Cluster(protocol_version) to the version supported by your cluster. http://datastax.github.io/python-driver/api/cassandra/cluster.html#cassandra.cluster.Cluster.protocol_version
+[2024-04-08T15:01:09.911+0000] {record.py:71} INFO - Sensor check existence of record: ['user_id', 'age', 'email', 'name']
+[2024-04-08T15:01:10.140+0000] {base.py:83} INFO - Using connection ID 'cassandra_conn' for task execution.
+[2024-04-08T15:01:10.281+0000] {cassandra.py:128} WARNING - Downgrading core protocol version from 66 to 65 for 172.21.0.4:9042. To avoid this, it is best practice to explicitly set Cluster(protocol_version) to the version supported by your cluster. http://datastax.github.io/python-driver/api/cassandra/cluster.html#cassandra.cluster.Cluster.protocol_version
+[2024-04-08T15:01:10.358+0000] {cassandra.py:128} WARNING - Downgrading core protocol version from 65 to 5 for 172.21.0.4:9042. To avoid this, it is best practice to explicitly set Cluster(protocol_version) to the version supported by your cluster. http://datastax.github.io/python-driver/api/cassandra/cluster.html#cassandra.cluster.Cluster.protocol_version
+[2024-04-08T15:02:11.479+0000] {record.py:71} INFO - Sensor check existence of record: ['user_id', 'age', 'email', 'name']
+[2024-04-08T15:02:11.931+0000] {base.py:83} INFO - Using connection ID 'cassandra_conn' for task execution.
+[2024-04-08T15:02:12.048+0000] {cassandra.py:128} WARNING - Downgrading core protocol version from 66 to 65 for 172.21.0.4:9042. To avoid this, it is best practice to explicitly set Cluster(protocol_version) to the version supported by your cluster. http://datastax.github.io/python-driver/api/cassandra/cluster.html#cassandra.cluster.Cluster.protocol_version
+[2024-04-08T15:02:12.134+0000] {cassandra.py:128} WARNING - Downgrading core protocol version from 65 to 5 for 172.21.0.4:9042. To avoid this, it is best practice to explicitly set Cluster(protocol_version) to the version supported by your cluster. http://datastax.github.io/python-driver/api/cassandra/cluster.html#cassandra.cluster.Cluster.protocol_version
+[2024-04-08T15:02:51.280+0000] {local_task_job_runner.py:302} WARNING - State of this instance has been externally set to None. Terminating instance.
+[2024-04-08T15:02:51.316+0000] {process_utils.py:131} INFO - Sending 15 to group 1055. PIDs of all processes in the group: [1055]
+[2024-04-08T15:02:51.322+0000] {process_utils.py:86} INFO - Sending the signal 15 to group 1055
+[2024-04-08T15:02:51.350+0000] {taskinstance.py:2483} ERROR - Received SIGTERM. Terminating subprocesses.
+[2024-04-08T15:02:51.416+0000] {taskinstance.py:2731} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/taskinstance.py", line 444, in _execute_task
+    result = _execute_callable(context=context, **execute_callable_kwargs)
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/taskinstance.py", line 414, in _execute_callable
+    return execute_callable(context=context, **execute_callable_kwargs)
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/sensors/base.py", line 293, in execute
+    time.sleep(self._get_next_poke_interval(started_at, run_duration, try_number))
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/taskinstance.py", line 2485, in signal_handler
+    raise AirflowException("Task received SIGTERM signal")
+airflow.exceptions.AirflowException: Task received SIGTERM signal
+[2024-04-08T15:02:51.441+0000] {taskinstance.py:1149} INFO - Marking task as FAILED. dag_id=cassandra_sensor_dag, task_id=cassandra_sensor_record, execution_date=20240408T003000, start_date=20240408T145800, end_date=20240408T150251
+[2024-04-08T15:02:51.586+0000] {standard_task_runner.py:107} ERROR - Failed to execute job 104 for task cassandra_sensor_record ((psycopg2.errors.ForeignKeyViolation) insert or update on table "task_fail" violates foreign key constraint "task_fail_ti_fkey"
+DETAIL:  Key (dag_id, task_id, run_id, map_index)=(cassandra_sensor_dag, cassandra_sensor_record, scheduled__2024-04-08T00:30:00+00:00, -1) is not present in table "task_instance".
+
+[SQL: INSERT INTO task_fail (task_id, dag_id, run_id, map_index, start_date, end_date, duration) VALUES (%(task_id)s, %(dag_id)s, %(run_id)s, %(map_index)s, %(start_date)s, %(end_date)s, %(duration)s) RETURNING task_fail.id]
+[parameters: {'task_id': 'cassandra_sensor_record', 'dag_id': 'cassandra_sensor_dag', 'run_id': 'scheduled__2024-04-08T00:30:00+00:00', 'map_index': -1, 'start_date': datetime.datetime(2024, 4, 8, 14, 58, 0, 633303, tzinfo=Timezone('UTC')), 'end_date': datetime.datetime(2024, 4, 8, 15, 2, 51, 426122, tzinfo=Timezone('UTC')), 'duration': 290}]
+(Background on this error at: https://sqlalche.me/e/14/gkpj); 1055)
+[2024-04-08T15:02:51.656+0000] {process_utils.py:79} INFO - Process psutil.Process(pid=1055, status='terminated', exitcode=1, started='14:58:02') (1055) terminated with exit code 1
+[2024-04-08T15:04:34.434+0000] {taskinstance.py:1979} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: cassandra_sensor_dag.cassandra_sensor_record scheduled__2024-04-08T00:30:00+00:00 [queued]>
+[2024-04-08T15:04:34.605+0000] {taskinstance.py:1979} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: cassandra_sensor_dag.cassandra_sensor_record scheduled__2024-04-08T00:30:00+00:00 [queued]>
+[2024-04-08T15:04:34.615+0000] {taskinstance.py:2193} INFO - Starting attempt 1 of 2
+[2024-04-08T15:04:34.902+0000] {taskinstance.py:2217} INFO - Executing <Task(CassandraRecordSensor): cassandra_sensor_record> on 2024-04-08 00:30:00+00:00
+[2024-04-08T15:04:35.011+0000] {standard_task_runner.py:60} INFO - Started process 1585 to run task
+[2024-04-08T15:04:35.086+0000] {standard_task_runner.py:87} INFO - Running: ['***', 'tasks', 'run', 'cassandra_sensor_dag', 'cassandra_sensor_record', 'scheduled__2024-04-08T00:30:00+00:00', '--job-id', '129', '--raw', '--subdir', 'DAGS_FOLDER/test.py', '--cfg-path', '/tmp/tmppb3tuy5f']
+[2024-04-08T15:04:35.161+0000] {standard_task_runner.py:88} INFO - Job 129: Subtask cassandra_sensor_record
+[2024-04-08T15:04:35.597+0000] {task_command.py:423} INFO - Running <TaskInstance: cassandra_sensor_dag.cassandra_sensor_record scheduled__2024-04-08T00:30:00+00:00 [running]> on host c2d2cc8ff432
+[2024-04-08T15:04:36.453+0000] {taskinstance.py:2513} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='cassandra_sensor_dag' AIRFLOW_CTX_TASK_ID='cassandra_sensor_record' AIRFLOW_CTX_EXECUTION_DATE='2024-04-08T00:30:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2024-04-08T00:30:00+00:00'
+[2024-04-08T15:04:36.482+0000] {record.py:71} INFO - Sensor check existence of record: ['user_id', 'age', 'email', 'name']
+[2024-04-08T15:04:36.595+0000] {base.py:83} INFO - Using connection ID 'cassandra_conn' for task execution.
+[2024-04-08T15:04:36.638+0000] {warnings.py:109} WARNING - /home/***/.local/lib/python3.8/site-packages/***/providers/apache/cassandra/hooks/cassandra.py:120: DeprecationWarning: Legacy execution parameters will be removed in 4.0. Consider using execution profiles.
+  self.cluster = Cluster(**conn_config)
+
+[2024-04-08T15:04:36.943+0000] {cassandra.py:128} WARNING - Downgrading core protocol version from 66 to 65 for 172.21.0.4:9042. To avoid this, it is best practice to explicitly set Cluster(protocol_version) to the version supported by your cluster. http://datastax.github.io/python-driver/api/cassandra/cluster.html#cassandra.cluster.Cluster.protocol_version
+[2024-04-08T15:04:36.981+0000] {cassandra.py:128} WARNING - Downgrading core protocol version from 65 to 5 for 172.21.0.4:9042. To avoid this, it is best practice to explicitly set Cluster(protocol_version) to the version supported by your cluster. http://datastax.github.io/python-driver/api/cassandra/cluster.html#cassandra.cluster.Cluster.protocol_version
+[2024-04-08T15:05:37.780+0000] {record.py:71} INFO - Sensor check existence of record: ['user_id', 'age', 'email', 'name']
+[2024-04-08T15:05:37.800+0000] {base.py:83} INFO - Using connection ID 'cassandra_conn' for task execution.
+[2024-04-08T15:05:37.807+0000] {cassandra.py:128} WARNING - Downgrading core protocol version from 66 to 65 for 172.21.0.4:9042. To avoid this, it is best practice to explicitly set Cluster(protocol_version) to the version supported by your cluster. http://datastax.github.io/python-driver/api/cassandra/cluster.html#cassandra.cluster.Cluster.protocol_version
+[2024-04-08T15:05:37.812+0000] {cassandra.py:128} WARNING - Downgrading core protocol version from 65 to 5 for 172.21.0.4:9042. To avoid this, it is best practice to explicitly set Cluster(protocol_version) to the version supported by your cluster. http://datastax.github.io/python-driver/api/cassandra/cluster.html#cassandra.cluster.Cluster.protocol_version
+[2024-04-08T15:06:38.037+0000] {record.py:71} INFO - Sensor check existence of record: ['user_id', 'age', 'email', 'name']
+[2024-04-08T15:06:38.075+0000] {base.py:83} INFO - Using connection ID 'cassandra_conn' for task execution.
+[2024-04-08T15:06:38.090+0000] {cassandra.py:128} WARNING - Downgrading core protocol version from 66 to 65 for 172.21.0.4:9042. To avoid this, it is best practice to explicitly set Cluster(protocol_version) to the version supported by your cluster. http://datastax.github.io/python-driver/api/cassandra/cluster.html#cassandra.cluster.Cluster.protocol_version
+[2024-04-08T15:06:38.094+0000] {cassandra.py:128} WARNING - Downgrading core protocol version from 65 to 5 for 172.21.0.4:9042. To avoid this, it is best practice to explicitly set Cluster(protocol_version) to the version supported by your cluster. http://datastax.github.io/python-driver/api/cassandra/cluster.html#cassandra.cluster.Cluster.protocol_version
+[2024-04-08T15:07:38.286+0000] {record.py:71} INFO - Sensor check existence of record: ['user_id', 'age', 'email', 'name']
+[2024-04-08T15:07:38.306+0000] {base.py:83} INFO - Using connection ID 'cassandra_conn' for task execution.
+[2024-04-08T15:07:38.348+0000] {cassandra.py:128} WARNING - Downgrading core protocol version from 66 to 65 for 172.21.0.4:9042. To avoid this, it is best practice to explicitly set Cluster(protocol_version) to the version supported by your cluster. http://datastax.github.io/python-driver/api/cassandra/cluster.html#cassandra.cluster.Cluster.protocol_version
+[2024-04-08T15:07:38.353+0000] {cassandra.py:128} WARNING - Downgrading core protocol version from 65 to 5 for 172.21.0.4:9042. To avoid this, it is best practice to explicitly set Cluster(protocol_version) to the version supported by your cluster. http://datastax.github.io/python-driver/api/cassandra/cluster.html#cassandra.cluster.Cluster.protocol_version
+[2024-04-08T15:08:38.902+0000] {record.py:71} INFO - Sensor check existence of record: ['user_id', 'age', 'email', 'name']
+[2024-04-08T15:08:38.936+0000] {base.py:83} INFO - Using connection ID 'cassandra_conn' for task execution.
+[2024-04-08T15:08:38.968+0000] {cassandra.py:128} WARNING - Downgrading core protocol version from 66 to 65 for 172.21.0.4:9042. To avoid this, it is best practice to explicitly set Cluster(protocol_version) to the version supported by your cluster. http://datastax.github.io/python-driver/api/cassandra/cluster.html#cassandra.cluster.Cluster.protocol_version
+[2024-04-08T15:08:38.989+0000] {cassandra.py:128} WARNING - Downgrading core protocol version from 65 to 5 for 172.21.0.4:9042. To avoid this, it is best practice to explicitly set Cluster(protocol_version) to the version supported by your cluster. http://datastax.github.io/python-driver/api/cassandra/cluster.html#cassandra.cluster.Cluster.protocol_version
+[2024-04-08T15:09:35.014+0000] {job.py:213} ERROR - Job heartbeat got an exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/sqlalchemy/engine/base.py", line 3371, in _wrap_pool_connect
+    return fn()
+  File "/home/airflow/.local/lib/python3.8/site-packages/sqlalchemy/pool/base.py", line 327, in connect
+    return _ConnectionFairy._checkout(self)
+  File "/home/airflow/.local/lib/python3.8/site-packages/sqlalchemy/pool/base.py", line 894, in _checkout
+    fairy = _ConnectionRecord.checkout(pool)
+  File "/home/airflow/.local/lib/python3.8/site-packages/sqlalchemy/pool/base.py", line 493, in checkout
+    rec = pool._do_get()
+  File "/home/airflow/.local/lib/python3.8/site-packages/sqlalchemy/pool/impl.py", line 256, in _do_get
+    return self._create_connection()
+  File "/home/airflow/.local/lib/python3.8/site-packages/sqlalchemy/pool/base.py", line 273, in _create_connection
+    return _ConnectionRecord(self)
+  File "/home/airflow/.local/lib/python3.8/site-packages/sqlalchemy/pool/base.py", line 388, in __init__
+    self.__connect()
+  File "/home/airflow/.local/lib/python3.8/site-packages/sqlalchemy/pool/base.py", line 691, in __connect
+    pool.logger.debug("Error on connect(): %s", e)
+  File "/home/airflow/.local/lib/python3.8/site-packages/sqlalchemy/util/langhelpers.py", line 70, in __exit__
+    compat.raise_(
+  File "/home/airflow/.local/lib/python3.8/site-packages/sqlalchemy/util/compat.py", line 211, in raise_
+    raise exception
+  File "/home/airflow/.local/lib/python3.8/site-packages/sqlalchemy/pool/base.py", line 686, in __connect
+    self.dbapi_connection = connection = pool._invoke_creator(self)
+  File "/home/airflow/.local/lib/python3.8/site-packages/sqlalchemy/engine/create.py", line 574, in connect
+    return dialect.connect(*cargs, **cparams)
+  File "/home/airflow/.local/lib/python3.8/site-packages/sqlalchemy/engine/default.py", line 598, in connect
+    return self.dbapi.connect(*cargs, **cparams)
+  File "/home/airflow/.local/lib/python3.8/site-packages/psycopg2/__init__.py", line 122, in connect
+    conn = _connect(dsn, connection_factory=connection_factory, **kwasync)
+psycopg2.OperationalError: could not translate host name "postgres" to address: Temporary failure in name resolution
+
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/jobs/job.py", line 187, in heartbeat
+    self._merge_from(Job._fetch_from_db(self, session))
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/api_internal/internal_api_call.py", line 114, in wrapper
+    return func(*args, **kwargs)
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/utils/session.py", line 76, in wrapper
+    return func(*args, **kwargs)
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/jobs/job.py", line 310, in _fetch_from_db
+    session.merge(job)
+  File "/home/airflow/.local/lib/python3.8/site-packages/sqlalchemy/orm/session.py", line 3056, in merge
+    return self._merge(
+  File "/home/airflow/.local/lib/python3.8/site-packages/sqlalchemy/orm/session.py", line 3136, in _merge
+    merged = self.get(
+  File "/home/airflow/.local/lib/python3.8/site-packages/sqlalchemy/orm/session.py", line 2853, in get
+    return self._get_impl(
+  File "/home/airflow/.local/lib/python3.8/site-packages/sqlalchemy/orm/session.py", line 2975, in _get_impl
+    return db_load_fn(
+  File "/home/airflow/.local/lib/python3.8/site-packages/sqlalchemy/orm/loading.py", line 530, in load_on_pk_identity
+    session.execute(
+  File "/home/airflow/.local/lib/python3.8/site-packages/sqlalchemy/orm/session.py", line 1716, in execute
+    conn = self._connection_for_bind(bind)
+  File "/home/airflow/.local/lib/python3.8/site-packages/sqlalchemy/orm/session.py", line 1555, in _connection_for_bind
+    return self._transaction._connection_for_bind(
+  File "/home/airflow/.local/lib/python3.8/site-packages/sqlalchemy/orm/session.py", line 750, in _connection_for_bind
+    conn = bind.connect()
+  File "/home/airflow/.local/lib/python3.8/site-packages/sqlalchemy/future/engine.py", line 412, in connect
+    return super(Engine, self).connect()
+  File "/home/airflow/.local/lib/python3.8/site-packages/sqlalchemy/engine/base.py", line 3325, in connect
+    return self._connection_cls(self, close_with_result=close_with_result)
+  File "/home/airflow/.local/lib/python3.8/site-packages/sqlalchemy/engine/base.py", line 96, in __init__
+    else engine.raw_connection()
+  File "/home/airflow/.local/lib/python3.8/site-packages/sqlalchemy/engine/base.py", line 3404, in raw_connection
+    return self._wrap_pool_connect(self.pool.connect, _connection)
+  File "/home/airflow/.local/lib/python3.8/site-packages/sqlalchemy/engine/base.py", line 3374, in _wrap_pool_connect
+    Connection._handle_dbapi_exception_noconnection(
+  File "/home/airflow/.local/lib/python3.8/site-packages/sqlalchemy/engine/base.py", line 2208, in _handle_dbapi_exception_noconnection
+    util.raise_(
+  File "/home/airflow/.local/lib/python3.8/site-packages/sqlalchemy/util/compat.py", line 211, in raise_
+    raise exception
+  File "/home/airflow/.local/lib/python3.8/site-packages/sqlalchemy/engine/base.py", line 3371, in _wrap_pool_connect
+    return fn()
+  File "/home/airflow/.local/lib/python3.8/site-packages/sqlalchemy/pool/base.py", line 327, in connect
+    return _ConnectionFairy._checkout(self)
+  File "/home/airflow/.local/lib/python3.8/site-packages/sqlalchemy/pool/base.py", line 894, in _checkout
+    fairy = _ConnectionRecord.checkout(pool)
+  File "/home/airflow/.local/lib/python3.8/site-packages/sqlalchemy/pool/base.py", line 493, in checkout
+    rec = pool._do_get()
+  File "/home/airflow/.local/lib/python3.8/site-packages/sqlalchemy/pool/impl.py", line 256, in _do_get
+    return self._create_connection()
+  File "/home/airflow/.local/lib/python3.8/site-packages/sqlalchemy/pool/base.py", line 273, in _create_connection
+    return _ConnectionRecord(self)
+  File "/home/airflow/.local/lib/python3.8/site-packages/sqlalchemy/pool/base.py", line 388, in __init__
+    self.__connect()
+  File "/home/airflow/.local/lib/python3.8/site-packages/sqlalchemy/pool/base.py", line 691, in __connect
+    pool.logger.debug("Error on connect(): %s", e)
+  File "/home/airflow/.local/lib/python3.8/site-packages/sqlalchemy/util/langhelpers.py", line 70, in __exit__
+    compat.raise_(
+  File "/home/airflow/.local/lib/python3.8/site-packages/sqlalchemy/util/compat.py", line 211, in raise_
+    raise exception
+  File "/home/airflow/.local/lib/python3.8/site-packages/sqlalchemy/pool/base.py", line 686, in __connect
+    self.dbapi_connection = connection = pool._invoke_creator(self)
+  File "/home/airflow/.local/lib/python3.8/site-packages/sqlalchemy/engine/create.py", line 574, in connect
+    return dialect.connect(*cargs, **cparams)
+  File "/home/airflow/.local/lib/python3.8/site-packages/sqlalchemy/engine/default.py", line 598, in connect
+    return self.dbapi.connect(*cargs, **cparams)
+  File "/home/airflow/.local/lib/python3.8/site-packages/psycopg2/__init__.py", line 122, in connect
+    conn = _connect(dsn, connection_factory=connection_factory, **kwasync)
+sqlalchemy.exc.OperationalError: (psycopg2.OperationalError) could not translate host name "postgres" to address: Temporary failure in name resolution
+
+(Background on this error at: https://sqlalche.me/e/14/e3q8)
+[2024-04-08T15:11:28.652+0000] {threading.py:932} WARNING - Heartbeat failed for connection (140560709786640) to 172.21.0.4:9042
+[2024-04-08T15:11:28.649+0000] {threading.py:932} WARNING - Heartbeat failed for connection (140560710581984) to 172.21.0.4:9042
+[2024-04-08T15:11:28.883+0000] {job.py:221} ERROR - Job heartbeat failed with error. Scheduler is in unhealthy state
+[2024-04-08T15:11:28.705+0000] {threading.py:932} WARNING - Heartbeat failed for connection (140560710354736) to 172.21.0.4:9042
+[2024-04-08T15:11:28.850+0000] {threading.py:932} WARNING - Heartbeat failed for connection (140560711118176) to 172.21.0.4:9042
+[2024-04-08T15:11:28.906+0000] {threading.py:932} WARNING - Heartbeat failed for connection (140560710053216) to 172.21.0.4:9042
+[2024-04-08T15:09:42.236+0000] {record.py:71} INFO - Sensor check existence of record: ['user_id', 'age', 'email', 'name']
+[2024-04-08T15:11:28.953+0000] {thread.py:57} WARNING - [control connection] Error connecting to 172.21.0.4:9042:
+Traceback (most recent call last):
+  File "cassandra/cluster.py", line 3577, in cassandra.cluster.ControlConnection._reconnect_internal
+  File "cassandra/cluster.py", line 3599, in cassandra.cluster.ControlConnection._try_connect
+  File "cassandra/cluster.py", line 1670, in cassandra.cluster.Cluster.connection_factory
+  File "cassandra/connection.py", line 846, in cassandra.connection.Connection.factory
+  File "/home/airflow/.local/lib/python3.8/site-packages/cassandra/io/libevreactor.py", line 266, in __init__
+    self._connect_socket()
+  File "cassandra/connection.py", line 951, in cassandra.connection.Connection._connect_socket
+ConnectionRefusedError: [Errno 111] Tried connecting to [('172.21.0.4', 9042)]. Last error: Connection refused
+[2024-04-08T15:11:28.955+0000] {thread.py:57} WARNING - [control connection] Error connecting to 172.21.0.4:9042:
+Traceback (most recent call last):
+  File "cassandra/cluster.py", line 3577, in cassandra.cluster.ControlConnection._reconnect_internal
+  File "cassandra/cluster.py", line 3599, in cassandra.cluster.ControlConnection._try_connect
+  File "cassandra/cluster.py", line 1670, in cassandra.cluster.Cluster.connection_factory
+  File "cassandra/connection.py", line 846, in cassandra.connection.Connection.factory
+  File "/home/airflow/.local/lib/python3.8/site-packages/cassandra/io/libevreactor.py", line 266, in __init__
+    self._connect_socket()
+  File "cassandra/connection.py", line 951, in cassandra.connection.Connection._connect_socket
+ConnectionRefusedError: [Errno 111] Tried connecting to [('172.21.0.4', 9042)]. Last error: Connection refused
+[2024-04-08T15:11:29.100+0000] {thread.py:57} WARNING - [control connection] Error connecting to 172.21.0.4:9042:
+Traceback (most recent call last):
+  File "cassandra/cluster.py", line 3577, in cassandra.cluster.ControlConnection._reconnect_internal
+  File "cassandra/cluster.py", line 3599, in cassandra.cluster.ControlConnection._try_connect
+  File "cassandra/cluster.py", line 1670, in cassandra.cluster.Cluster.connection_factory
+  File "cassandra/connection.py", line 846, in cassandra.connection.Connection.factory
+  File "/home/airflow/.local/lib/python3.8/site-packages/cassandra/io/libevreactor.py", line 266, in __init__
+    self._connect_socket()
+  File "cassandra/connection.py", line 951, in cassandra.connection.Connection._connect_socket
+ConnectionRefusedError: [Errno 111] Tried connecting to [('172.21.0.4', 9042)]. Last error: Connection refused
+[2024-04-08T15:11:28.993+0000] {thread.py:57} WARNING - [control connection] Error connecting to 172.21.0.4:9042:
+Traceback (most recent call last):
+  File "cassandra/cluster.py", line 3577, in cassandra.cluster.ControlConnection._reconnect_internal
+  File "cassandra/cluster.py", line 3599, in cassandra.cluster.ControlConnection._try_connect
+  File "cassandra/cluster.py", line 1670, in cassandra.cluster.Cluster.connection_factory
+  File "cassandra/connection.py", line 846, in cassandra.connection.Connection.factory
+  File "/home/airflow/.local/lib/python3.8/site-packages/cassandra/io/libevreactor.py", line 266, in __init__
+    self._connect_socket()
+  File "cassandra/connection.py", line 951, in cassandra.connection.Connection._connect_socket
+ConnectionRefusedError: [Errno 111] Tried connecting to [('172.21.0.4', 9042)]. Last error: Connection refused
+[2024-04-08T15:11:28.996+0000] {thread.py:57} WARNING - [control connection] Error connecting to 172.21.0.4:9042:
+Traceback (most recent call last):
+  File "cassandra/cluster.py", line 3577, in cassandra.cluster.ControlConnection._reconnect_internal
+  File "cassandra/cluster.py", line 3599, in cassandra.cluster.ControlConnection._try_connect
+  File "cassandra/cluster.py", line 1670, in cassandra.cluster.Cluster.connection_factory
+  File "cassandra/connection.py", line 846, in cassandra.connection.Connection.factory
+  File "/home/airflow/.local/lib/python3.8/site-packages/cassandra/io/libevreactor.py", line 266, in __init__
+    self._connect_socket()
+  File "cassandra/connection.py", line 951, in cassandra.connection.Connection._connect_socket
+ConnectionRefusedError: [Errno 111] Tried connecting to [('172.21.0.4', 9042)]. Last error: Connection refused
+[2024-04-08T15:11:28.997+0000] {thread.py:57} WARNING - [control connection] Error connecting to 172.21.0.4:9042:
+Traceback (most recent call last):
+  File "cassandra/cluster.py", line 3577, in cassandra.cluster.ControlConnection._reconnect_internal
+  File "cassandra/cluster.py", line 3599, in cassandra.cluster.ControlConnection._try_connect
+  File "cassandra/cluster.py", line 1670, in cassandra.cluster.Cluster.connection_factory
+  File "cassandra/connection.py", line 846, in cassandra.connection.Connection.factory
+  File "/home/airflow/.local/lib/python3.8/site-packages/cassandra/io/libevreactor.py", line 266, in __init__
+    self._connect_socket()
+  File "cassandra/connection.py", line 951, in cassandra.connection.Connection._connect_socket
+ConnectionRefusedError: [Errno 111] Tried connecting to [('172.21.0.4', 9042)]. Last error: Connection refused
+[2024-04-08T15:11:29.092+0000] {thread.py:57} WARNING - [control connection] Error connecting to 172.21.0.4:9042:
+Traceback (most recent call last):
+  File "cassandra/cluster.py", line 3577, in cassandra.cluster.ControlConnection._reconnect_internal
+  File "cassandra/cluster.py", line 3599, in cassandra.cluster.ControlConnection._try_connect
+  File "cassandra/cluster.py", line 1670, in cassandra.cluster.Cluster.connection_factory
+  File "cassandra/connection.py", line 846, in cassandra.connection.Connection.factory
+  File "/home/airflow/.local/lib/python3.8/site-packages/cassandra/io/libevreactor.py", line 266, in __init__
+    self._connect_socket()
+  File "cassandra/connection.py", line 951, in cassandra.connection.Connection._connect_socket
+ConnectionRefusedError: [Errno 111] Tried connecting to [('172.21.0.4', 9042)]. Last error: Connection refused
+[2024-04-08T15:11:28.956+0000] {thread.py:57} WARNING - [control connection] Error connecting to 172.21.0.4:9042:
+Traceback (most recent call last):
+  File "cassandra/cluster.py", line 3577, in cassandra.cluster.ControlConnection._reconnect_internal
+  File "cassandra/cluster.py", line 3599, in cassandra.cluster.ControlConnection._try_connect
+  File "cassandra/cluster.py", line 1670, in cassandra.cluster.Cluster.connection_factory
+  File "cassandra/connection.py", line 846, in cassandra.connection.Connection.factory
+  File "/home/airflow/.local/lib/python3.8/site-packages/cassandra/io/libevreactor.py", line 266, in __init__
+    self._connect_socket()
+  File "cassandra/connection.py", line 951, in cassandra.connection.Connection._connect_socket
+ConnectionRefusedError: [Errno 111] Tried connecting to [('172.21.0.4', 9042)]. Last error: Connection refused
+[2024-04-08T15:11:29.106+0000] {thread.py:57} WARNING - [control connection] Error connecting to 172.21.0.4:9042:
+Traceback (most recent call last):
+  File "cassandra/cluster.py", line 3577, in cassandra.cluster.ControlConnection._reconnect_internal
+  File "cassandra/cluster.py", line 3599, in cassandra.cluster.ControlConnection._try_connect
+  File "cassandra/cluster.py", line 1670, in cassandra.cluster.Cluster.connection_factory
+  File "cassandra/connection.py", line 846, in cassandra.connection.Connection.factory
+  File "/home/airflow/.local/lib/python3.8/site-packages/cassandra/io/libevreactor.py", line 266, in __init__
+    self._connect_socket()
+  File "cassandra/connection.py", line 951, in cassandra.connection.Connection._connect_socket
+ConnectionRefusedError: [Errno 111] Tried connecting to [('172.21.0.4', 9042)]. Last error: Connection refused
+[2024-04-08T15:11:30.143+0000] {thread.py:57} WARNING - [control connection] Error connecting to 172.21.0.4:9042:
+Traceback (most recent call last):
+  File "cassandra/cluster.py", line 3577, in cassandra.cluster.ControlConnection._reconnect_internal
+  File "cassandra/cluster.py", line 3599, in cassandra.cluster.ControlConnection._try_connect
+  File "cassandra/cluster.py", line 1670, in cassandra.cluster.Cluster.connection_factory
+  File "cassandra/connection.py", line 846, in cassandra.connection.Connection.factory
+  File "/home/airflow/.local/lib/python3.8/site-packages/cassandra/io/libevreactor.py", line 266, in __init__
+    self._connect_socket()
+  File "cassandra/connection.py", line 951, in cassandra.connection.Connection._connect_socket
+ConnectionRefusedError: [Errno 111] Tried connecting to [('172.21.0.4', 9042)]. Last error: Connection refused
+[2024-04-08T15:11:30.154+0000] {thread.py:57} WARNING - [control connection] Error connecting to 172.21.0.4:9042:
+Traceback (most recent call last):
+  File "cassandra/cluster.py", line 3577, in cassandra.cluster.ControlConnection._reconnect_internal
+  File "cassandra/cluster.py", line 3599, in cassandra.cluster.ControlConnection._try_connect
+  File "cassandra/cluster.py", line 1670, in cassandra.cluster.Cluster.connection_factory
+  File "cassandra/connection.py", line 846, in cassandra.connection.Connection.factory
+  File "/home/airflow/.local/lib/python3.8/site-packages/cassandra/io/libevreactor.py", line 266, in __init__
+    self._connect_socket()
+  File "cassandra/connection.py", line 951, in cassandra.connection.Connection._connect_socket
+ConnectionRefusedError: [Errno 111] Tried connecting to [('172.21.0.4', 9042)]. Last error: Connection refused
+[2024-04-08T15:11:30.162+0000] {thread.py:57} WARNING - [control connection] Error connecting to 172.21.0.4:9042:
+Traceback (most recent call last):
+  File "cassandra/cluster.py", line 3577, in cassandra.cluster.ControlConnection._reconnect_internal
+  File "cassandra/cluster.py", line 3599, in cassandra.cluster.ControlConnection._try_connect
+  File "cassandra/cluster.py", line 1670, in cassandra.cluster.Cluster.connection_factory
+  File "cassandra/connection.py", line 846, in cassandra.connection.Connection.factory
+  File "/home/airflow/.local/lib/python3.8/site-packages/cassandra/io/libevreactor.py", line 266, in __init__
+    self._connect_socket()
+  File "cassandra/connection.py", line 951, in cassandra.connection.Connection._connect_socket
+ConnectionRefusedError: [Errno 111] Tried connecting to [('172.21.0.4', 9042)]. Last error: Connection refused
+[2024-04-08T15:11:30.177+0000] {thread.py:57} WARNING - [control connection] Error connecting to 172.21.0.4:9042:
+Traceback (most recent call last):
+  File "cassandra/cluster.py", line 3577, in cassandra.cluster.ControlConnection._reconnect_internal
+  File "cassandra/cluster.py", line 3599, in cassandra.cluster.ControlConnection._try_connect
+  File "cassandra/cluster.py", line 1670, in cassandra.cluster.Cluster.connection_factory
+  File "cassandra/connection.py", line 846, in cassandra.connection.Connection.factory
+  File "/home/airflow/.local/lib/python3.8/site-packages/cassandra/io/libevreactor.py", line 266, in __init__
+    self._connect_socket()
+  File "cassandra/connection.py", line 951, in cassandra.connection.Connection._connect_socket
+ConnectionRefusedError: [Errno 111] Tried connecting to [('172.21.0.4', 9042)]. Last error: Connection refused
+[2024-04-08T15:11:30.228+0000] {thread.py:57} WARNING - [control connection] Error connecting to 172.21.0.4:9042:
+Traceback (most recent call last):
+  File "cassandra/cluster.py", line 3577, in cassandra.cluster.ControlConnection._reconnect_internal
+  File "cassandra/cluster.py", line 3599, in cassandra.cluster.ControlConnection._try_connect
+  File "cassandra/cluster.py", line 1670, in cassandra.cluster.Cluster.connection_factory
+  File "cassandra/connection.py", line 846, in cassandra.connection.Connection.factory
+  File "/home/airflow/.local/lib/python3.8/site-packages/cassandra/io/libevreactor.py", line 266, in __init__
+    self._connect_socket()
+  File "cassandra/connection.py", line 951, in cassandra.connection.Connection._connect_socket
+ConnectionRefusedError: [Errno 111] Tried connecting to [('172.21.0.4', 9042)]. Last error: Connection refused
+[2024-04-08T15:11:30.692+0000] {base.py:83} INFO - Using connection ID 'cassandra_conn' for task execution.
+[2024-04-08T15:11:30.792+0000] {cassandra.py:128} WARNING - [control connection] Error connecting to 172.21.0.4:9042:
+Traceback (most recent call last):
+  File "cassandra/cluster.py", line 3577, in cassandra.cluster.ControlConnection._reconnect_internal
+  File "cassandra/cluster.py", line 3599, in cassandra.cluster.ControlConnection._try_connect
+  File "cassandra/cluster.py", line 1670, in cassandra.cluster.Cluster.connection_factory
+  File "cassandra/connection.py", line 846, in cassandra.connection.Connection.factory
+  File "/home/airflow/.local/lib/python3.8/site-packages/cassandra/io/libevreactor.py", line 266, in __init__
+    self._connect_socket()
+  File "cassandra/connection.py", line 951, in cassandra.connection.Connection._connect_socket
+ConnectionRefusedError: [Errno 111] Tried connecting to [('172.21.0.4', 9042)]. Last error: Connection refused
+[2024-04-08T15:11:30.813+0000] {cassandra.py:128} ERROR - Control connection failed to connect, shutting down Cluster:
+Traceback (most recent call last):
+  File "cassandra/cluster.py", line 1740, in cassandra.cluster.Cluster.connect
+  File "cassandra/cluster.py", line 3543, in cassandra.cluster.ControlConnection.connect
+  File "cassandra/cluster.py", line 3588, in cassandra.cluster.ControlConnection._reconnect_internal
+cassandra.cluster.NoHostAvailable: ('Unable to connect to any servers', {'172.21.0.4:9042': ConnectionRefusedError(111, "Tried connecting to [('172.21.0.4', 9042)]. Last error: Connection refused")})
+[2024-04-08T15:11:37.006+0000] {thread.py:57} WARNING - [control connection] Error connecting to 172.21.0.4:9042:
+Traceback (most recent call last):
+  File "cassandra/cluster.py", line 3577, in cassandra.cluster.ControlConnection._reconnect_internal
+  File "cassandra/cluster.py", line 3599, in cassandra.cluster.ControlConnection._try_connect
+  File "cassandra/cluster.py", line 1670, in cassandra.cluster.Cluster.connection_factory
+  File "cassandra/connection.py", line 846, in cassandra.connection.Connection.factory
+  File "/home/airflow/.local/lib/python3.8/site-packages/cassandra/io/libevreactor.py", line 266, in __init__
+    self._connect_socket()
+  File "cassandra/connection.py", line 951, in cassandra.connection.Connection._connect_socket
+OSError: [Errno None] Tried connecting to [('172.21.0.4', 9042)]. Last error: timed out
+[2024-04-08T15:11:37.060+0000] {thread.py:57} WARNING - [control connection] Error connecting to 172.21.0.4:9042:
+Traceback (most recent call last):
+  File "cassandra/cluster.py", line 3577, in cassandra.cluster.ControlConnection._reconnect_internal
+  File "cassandra/cluster.py", line 3599, in cassandra.cluster.ControlConnection._try_connect
+  File "cassandra/cluster.py", line 1670, in cassandra.cluster.Cluster.connection_factory
+  File "cassandra/connection.py", line 846, in cassandra.connection.Connection.factory
+  File "/home/airflow/.local/lib/python3.8/site-packages/cassandra/io/libevreactor.py", line 266, in __init__
+    self._connect_socket()
+  File "cassandra/connection.py", line 951, in cassandra.connection.Connection._connect_socket
+OSError: [Errno None] Tried connecting to [('172.21.0.4', 9042)]. Last error: timed out
+[2024-04-08T15:11:37.120+0000] {thread.py:57} WARNING - [control connection] Error connecting to 172.21.0.4:9042:
+Traceback (most recent call last):
+  File "cassandra/cluster.py", line 3577, in cassandra.cluster.ControlConnection._reconnect_internal
+  File "cassandra/cluster.py", line 3599, in cassandra.cluster.ControlConnection._try_connect
+  File "cassandra/cluster.py", line 1670, in cassandra.cluster.Cluster.connection_factory
+  File "cassandra/connection.py", line 846, in cassandra.connection.Connection.factory
+  File "/home/airflow/.local/lib/python3.8/site-packages/cassandra/io/libevreactor.py", line 266, in __init__
+    self._connect_socket()
+  File "cassandra/connection.py", line 951, in cassandra.connection.Connection._connect_socket
+OSError: [Errno None] Tried connecting to [('172.21.0.4', 9042)]. Last error: timed out
+[2024-04-08T15:11:37.260+0000] {thread.py:57} WARNING - [control connection] Error connecting to 172.21.0.4:9042:
+Traceback (most recent call last):
+  File "cassandra/cluster.py", line 3577, in cassandra.cluster.ControlConnection._reconnect_internal
+  File "cassandra/cluster.py", line 3599, in cassandra.cluster.ControlConnection._try_connect
+  File "cassandra/cluster.py", line 1670, in cassandra.cluster.Cluster.connection_factory
+  File "cassandra/connection.py", line 846, in cassandra.connection.Connection.factory
+  File "/home/airflow/.local/lib/python3.8/site-packages/cassandra/io/libevreactor.py", line 266, in __init__
+    self._connect_socket()
+  File "cassandra/connection.py", line 951, in cassandra.connection.Connection._connect_socket
+OSError: [Errno None] Tried connecting to [('172.21.0.4', 9042)]. Last error: timed out
+[2024-04-08T15:11:37.275+0000] {thread.py:57} WARNING - [control connection] Error connecting to 172.21.0.4:9042:
+Traceback (most recent call last):
+  File "cassandra/cluster.py", line 3577, in cassandra.cluster.ControlConnection._reconnect_internal
+  File "cassandra/cluster.py", line 3599, in cassandra.cluster.ControlConnection._try_connect
+  File "cassandra/cluster.py", line 1670, in cassandra.cluster.Cluster.connection_factory
+  File "cassandra/connection.py", line 846, in cassandra.connection.Connection.factory
+  File "/home/airflow/.local/lib/python3.8/site-packages/cassandra/io/libevreactor.py", line 266, in __init__
+    self._connect_socket()
+  File "cassandra/connection.py", line 951, in cassandra.connection.Connection._connect_socket
+OSError: [Errno None] Tried connecting to [('172.21.0.4', 9042)]. Last error: timed out
+[2024-04-08T15:11:43.542+0000] {thread.py:57} WARNING - [control connection] Error connecting to 172.21.0.4:9042:
+Traceback (most recent call last):
+  File "cassandra/cluster.py", line 3577, in cassandra.cluster.ControlConnection._reconnect_internal
+  File "cassandra/cluster.py", line 3599, in cassandra.cluster.ControlConnection._try_connect
+  File "cassandra/cluster.py", line 1670, in cassandra.cluster.Cluster.connection_factory
+  File "cassandra/connection.py", line 846, in cassandra.connection.Connection.factory
+  File "/home/airflow/.local/lib/python3.8/site-packages/cassandra/io/libevreactor.py", line 266, in __init__
+    self._connect_socket()
+  File "cassandra/connection.py", line 951, in cassandra.connection.Connection._connect_socket
+OSError: [Errno 113] Tried connecting to [('172.21.0.4', 9042)]. Last error: No route to host
+[2024-04-08T15:11:43.544+0000] {thread.py:57} WARNING - [control connection] Error connecting to 172.21.0.4:9042:
+Traceback (most recent call last):
+  File "cassandra/cluster.py", line 3577, in cassandra.cluster.ControlConnection._reconnect_internal
+  File "cassandra/cluster.py", line 3599, in cassandra.cluster.ControlConnection._try_connect
+  File "cassandra/cluster.py", line 1670, in cassandra.cluster.Cluster.connection_factory
+  File "cassandra/connection.py", line 846, in cassandra.connection.Connection.factory
+  File "/home/airflow/.local/lib/python3.8/site-packages/cassandra/io/libevreactor.py", line 266, in __init__
+    self._connect_socket()
+  File "cassandra/connection.py", line 951, in cassandra.connection.Connection._connect_socket
+OSError: [Errno 113] Tried connecting to [('172.21.0.4', 9042)]. Last error: No route to host
+[2024-04-08T15:11:43.544+0000] {thread.py:57} WARNING - [control connection] Error connecting to 172.21.0.4:9042:
+Traceback (most recent call last):
+  File "cassandra/cluster.py", line 3577, in cassandra.cluster.ControlConnection._reconnect_internal
+  File "cassandra/cluster.py", line 3599, in cassandra.cluster.ControlConnection._try_connect
+  File "cassandra/cluster.py", line 1670, in cassandra.cluster.Cluster.connection_factory
+  File "cassandra/connection.py", line 846, in cassandra.connection.Connection.factory
+  File "/home/airflow/.local/lib/python3.8/site-packages/cassandra/io/libevreactor.py", line 266, in __init__
+    self._connect_socket()
+  File "cassandra/connection.py", line 951, in cassandra.connection.Connection._connect_socket
+OSError: [Errno 113] Tried connecting to [('172.21.0.4', 9042)]. Last error: No route to host
+[2024-04-08T15:11:43.544+0000] {thread.py:57} WARNING - [control connection] Error connecting to 172.21.0.4:9042:
+Traceback (most recent call last):
+  File "cassandra/cluster.py", line 3577, in cassandra.cluster.ControlConnection._reconnect_internal
+  File "cassandra/cluster.py", line 3599, in cassandra.cluster.ControlConnection._try_connect
+  File "cassandra/cluster.py", line 1670, in cassandra.cluster.Cluster.connection_factory
+  File "cassandra/connection.py", line 846, in cassandra.connection.Connection.factory
+  File "/home/airflow/.local/lib/python3.8/site-packages/cassandra/io/libevreactor.py", line 266, in __init__
+    self._connect_socket()
+  File "cassandra/connection.py", line 951, in cassandra.connection.Connection._connect_socket
+OSError: [Errno 113] Tried connecting to [('172.21.0.4', 9042)]. Last error: No route to host
+[2024-04-08T15:11:43.545+0000] {thread.py:57} WARNING - [control connection] Error connecting to 172.21.0.4:9042:
+Traceback (most recent call last):
+  File "cassandra/cluster.py", line 3577, in cassandra.cluster.ControlConnection._reconnect_internal
+  File "cassandra/cluster.py", line 3599, in cassandra.cluster.ControlConnection._try_connect
+  File "cassandra/cluster.py", line 1670, in cassandra.cluster.Cluster.connection_factory
+  File "cassandra/connection.py", line 846, in cassandra.connection.Connection.factory
+  File "/home/airflow/.local/lib/python3.8/site-packages/cassandra/io/libevreactor.py", line 266, in __init__
+    self._connect_socket()
+  File "cassandra/connection.py", line 951, in cassandra.connection.Connection._connect_socket
+OSError: [Errno 113] Tried connecting to [('172.21.0.4', 9042)]. Last error: No route to host
+[2024-04-08T15:11:53.461+0000] {thread.py:57} WARNING - [control connection] Error connecting to 172.21.0.4:9042:
+Traceback (most recent call last):
+  File "cassandra/cluster.py", line 3577, in cassandra.cluster.ControlConnection._reconnect_internal
+  File "cassandra/cluster.py", line 3599, in cassandra.cluster.ControlConnection._try_connect
+  File "cassandra/cluster.py", line 1670, in cassandra.cluster.Cluster.connection_factory
+  File "cassandra/connection.py", line 846, in cassandra.connection.Connection.factory
+  File "/home/airflow/.local/lib/python3.8/site-packages/cassandra/io/libevreactor.py", line 266, in __init__
+    self._connect_socket()
+  File "cassandra/connection.py", line 951, in cassandra.connection.Connection._connect_socket
+OSError: [Errno 113] Tried connecting to [('172.21.0.4', 9042)]. Last error: No route to host
+[2024-04-08T15:11:53.465+0000] {thread.py:57} WARNING - [control connection] Error connecting to 172.21.0.4:9042:
+Traceback (most recent call last):
+  File "cassandra/cluster.py", line 3577, in cassandra.cluster.ControlConnection._reconnect_internal
+  File "cassandra/cluster.py", line 3599, in cassandra.cluster.ControlConnection._try_connect
+  File "cassandra/cluster.py", line 1670, in cassandra.cluster.Cluster.connection_factory
+  File "cassandra/connection.py", line 846, in cassandra.connection.Connection.factory
+  File "/home/airflow/.local/lib/python3.8/site-packages/cassandra/io/libevreactor.py", line 266, in __init__
+    self._connect_socket()
+  File "cassandra/connection.py", line 951, in cassandra.connection.Connection._connect_socket
+OSError: [Errno 113] Tried connecting to [('172.21.0.4', 9042)]. Last error: No route to host
+[2024-04-08T15:11:53.466+0000] {thread.py:57} WARNING - [control connection] Error connecting to 172.21.0.4:9042:
+Traceback (most recent call last):
+  File "cassandra/cluster.py", line 3577, in cassandra.cluster.ControlConnection._reconnect_internal
+  File "cassandra/cluster.py", line 3599, in cassandra.cluster.ControlConnection._try_connect
+  File "cassandra/cluster.py", line 1670, in cassandra.cluster.Cluster.connection_factory
+  File "cassandra/connection.py", line 846, in cassandra.connection.Connection.factory
+  File "/home/airflow/.local/lib/python3.8/site-packages/cassandra/io/libevreactor.py", line 266, in __init__
+    self._connect_socket()
+  File "cassandra/connection.py", line 951, in cassandra.connection.Connection._connect_socket
+OSError: [Errno 113] Tried connecting to [('172.21.0.4', 9042)]. Last error: No route to host
+[2024-04-08T15:11:53.466+0000] {thread.py:57} WARNING - [control connection] Error connecting to 172.21.0.4:9042:
+Traceback (most recent call last):
+  File "cassandra/cluster.py", line 3577, in cassandra.cluster.ControlConnection._reconnect_internal
+  File "cassandra/cluster.py", line 3599, in cassandra.cluster.ControlConnection._try_connect
+  File "cassandra/cluster.py", line 1670, in cassandra.cluster.Cluster.connection_factory
+  File "cassandra/connection.py", line 846, in cassandra.connection.Connection.factory
+  File "/home/airflow/.local/lib/python3.8/site-packages/cassandra/io/libevreactor.py", line 266, in __init__
+    self._connect_socket()
+  File "cassandra/connection.py", line 951, in cassandra.connection.Connection._connect_socket
+OSError: [Errno 113] Tried connecting to [('172.21.0.4', 9042)]. Last error: No route to host
+[2024-04-08T15:11:57.287+0000] {thread.py:57} WARNING - [control connection] Error connecting to 172.21.0.4:9042:
+Traceback (most recent call last):
+  File "cassandra/cluster.py", line 3577, in cassandra.cluster.ControlConnection._reconnect_internal
+  File "cassandra/cluster.py", line 3599, in cassandra.cluster.ControlConnection._try_connect
+  File "cassandra/cluster.py", line 1670, in cassandra.cluster.Cluster.connection_factory
+  File "cassandra/connection.py", line 846, in cassandra.connection.Connection.factory
+  File "/home/airflow/.local/lib/python3.8/site-packages/cassandra/io/libevreactor.py", line 266, in __init__
+    self._connect_socket()
+  File "cassandra/connection.py", line 951, in cassandra.connection.Connection._connect_socket
+OSError: [Errno None] Tried connecting to [('172.21.0.4', 9042)]. Last error: timed out
+[2024-04-08T15:11:59.718+0000] {thread.py:57} WARNING - [control connection] Error connecting to 172.21.0.4:9042:
+Traceback (most recent call last):
+  File "cassandra/cluster.py", line 3577, in cassandra.cluster.ControlConnection._reconnect_internal
+  File "cassandra/cluster.py", line 3599, in cassandra.cluster.ControlConnection._try_connect
+  File "cassandra/cluster.py", line 1670, in cassandra.cluster.Cluster.connection_factory
+  File "cassandra/connection.py", line 846, in cassandra.connection.Connection.factory
+  File "/home/airflow/.local/lib/python3.8/site-packages/cassandra/io/libevreactor.py", line 266, in __init__
+    self._connect_socket()
+  File "cassandra/connection.py", line 951, in cassandra.connection.Connection._connect_socket
+OSError: [Errno 113] Tried connecting to [('172.21.0.4', 9042)]. Last error: No route to host
+[2024-04-08T15:12:02.845+0000] {thread.py:57} WARNING - [control connection] Error connecting to 172.21.0.4:9042:
+Traceback (most recent call last):
+  File "cassandra/cluster.py", line 3577, in cassandra.cluster.ControlConnection._reconnect_internal
+  File "cassandra/cluster.py", line 3599, in cassandra.cluster.ControlConnection._try_connect
+  File "cassandra/cluster.py", line 1670, in cassandra.cluster.Cluster.connection_factory
+  File "cassandra/connection.py", line 846, in cassandra.connection.Connection.factory
+  File "/home/airflow/.local/lib/python3.8/site-packages/cassandra/io/libevreactor.py", line 266, in __init__
+    self._connect_socket()
+  File "cassandra/connection.py", line 951, in cassandra.connection.Connection._connect_socket
+OSError: [Errno 113] Tried connecting to [('172.21.0.4', 9042)]. Last error: No route to host
+[2024-04-08T15:12:02.852+0000] {thread.py:57} WARNING - [control connection] Error connecting to 172.21.0.4:9042:
+Traceback (most recent call last):
+  File "cassandra/cluster.py", line 3577, in cassandra.cluster.ControlConnection._reconnect_internal
+  File "cassandra/cluster.py", line 3599, in cassandra.cluster.ControlConnection._try_connect
+  File "cassandra/cluster.py", line 1670, in cassandra.cluster.Cluster.connection_factory
+  File "cassandra/connection.py", line 846, in cassandra.connection.Connection.factory
+  File "/home/airflow/.local/lib/python3.8/site-packages/cassandra/io/libevreactor.py", line 266, in __init__
+    self._connect_socket()
+  File "cassandra/connection.py", line 951, in cassandra.connection.Connection._connect_socket
+OSError: [Errno 113] Tried connecting to [('172.21.0.4', 9042)]. Last error: No route to host
+[2024-04-08T15:12:02.852+0000] {thread.py:57} WARNING - [control connection] Error connecting to 172.21.0.4:9042:
+Traceback (most recent call last):
+  File "cassandra/cluster.py", line 3577, in cassandra.cluster.ControlConnection._reconnect_internal
+  File "cassandra/cluster.py", line 3599, in cassandra.cluster.ControlConnection._try_connect
+  File "cassandra/cluster.py", line 1670, in cassandra.cluster.Cluster.connection_factory
+  File "cassandra/connection.py", line 846, in cassandra.connection.Connection.factory
+  File "/home/airflow/.local/lib/python3.8/site-packages/cassandra/io/libevreactor.py", line 266, in __init__
+    self._connect_socket()
+  File "cassandra/connection.py", line 951, in cassandra.connection.Connection._connect_socket
+OSError: [Errno 113] Tried connecting to [('172.21.0.4', 9042)]. Last error: No route to host
+[2024-04-08T15:12:02.854+0000] {thread.py:57} WARNING - [control connection] Error connecting to 172.21.0.4:9042:
+Traceback (most recent call last):
+  File "cassandra/cluster.py", line 3577, in cassandra.cluster.ControlConnection._reconnect_internal
+  File "cassandra/cluster.py", line 3599, in cassandra.cluster.ControlConnection._try_connect
+  File "cassandra/cluster.py", line 1670, in cassandra.cluster.Cluster.connection_factory
+  File "cassandra/connection.py", line 846, in cassandra.connection.Connection.factory
+  File "/home/airflow/.local/lib/python3.8/site-packages/cassandra/io/libevreactor.py", line 266, in __init__
+    self._connect_socket()
+  File "cassandra/connection.py", line 951, in cassandra.connection.Connection._connect_socket
+OSError: [Errno 113] Tried connecting to [('172.21.0.4', 9042)]. Last error: No route to host
+[2024-04-08T15:12:02.855+0000] {thread.py:57} WARNING - [control connection] Error connecting to 172.21.0.4:9042:
+Traceback (most recent call last):
+  File "cassandra/cluster.py", line 3577, in cassandra.cluster.ControlConnection._reconnect_internal
+  File "cassandra/cluster.py", line 3599, in cassandra.cluster.ControlConnection._try_connect
+  File "cassandra/cluster.py", line 1670, in cassandra.cluster.Cluster.connection_factory
+  File "cassandra/connection.py", line 846, in cassandra.connection.Connection.factory
+  File "/home/airflow/.local/lib/python3.8/site-packages/cassandra/io/libevreactor.py", line 266, in __init__
+    self._connect_socket()
+  File "cassandra/connection.py", line 951, in cassandra.connection.Connection._connect_socket
+OSError: [Errno 113] Tried connecting to [('172.21.0.4', 9042)]. Last error: No route to host
+[2024-04-08T15:12:08.935+0000] {thread.py:57} WARNING - [control connection] Error connecting to 172.21.0.4:9042:
+Traceback (most recent call last):
+  File "cassandra/cluster.py", line 3577, in cassandra.cluster.ControlConnection._reconnect_internal
+  File "cassandra/cluster.py", line 3599, in cassandra.cluster.ControlConnection._try_connect
+  File "cassandra/cluster.py", line 1670, in cassandra.cluster.Cluster.connection_factory
+  File "cassandra/connection.py", line 846, in cassandra.connection.Connection.factory
+  File "/home/airflow/.local/lib/python3.8/site-packages/cassandra/io/libevreactor.py", line 266, in __init__
+    self._connect_socket()
+  File "cassandra/connection.py", line 951, in cassandra.connection.Connection._connect_socket
+OSError: [Errno None] Tried connecting to [('172.21.0.4', 9042)]. Last error: timed out
+[2024-04-08T15:12:08.940+0000] {thread.py:57} WARNING - [control connection] Error connecting to 172.21.0.4:9042:
+Traceback (most recent call last):
+  File "cassandra/cluster.py", line 3577, in cassandra.cluster.ControlConnection._reconnect_internal
+  File "cassandra/cluster.py", line 3599, in cassandra.cluster.ControlConnection._try_connect
+  File "cassandra/cluster.py", line 1670, in cassandra.cluster.Cluster.connection_factory
+  File "cassandra/connection.py", line 846, in cassandra.connection.Connection.factory
+  File "/home/airflow/.local/lib/python3.8/site-packages/cassandra/io/libevreactor.py", line 266, in __init__
+    self._connect_socket()
+  File "cassandra/connection.py", line 951, in cassandra.connection.Connection._connect_socket
+OSError: [Errno None] Tried connecting to [('172.21.0.4', 9042)]. Last error: timed out
+[2024-04-08T15:12:08.941+0000] {thread.py:57} WARNING - [control connection] Error connecting to 172.21.0.4:9042:
+Traceback (most recent call last):
+  File "cassandra/cluster.py", line 3577, in cassandra.cluster.ControlConnection._reconnect_internal
+  File "cassandra/cluster.py", line 3599, in cassandra.cluster.ControlConnection._try_connect
+  File "cassandra/cluster.py", line 1670, in cassandra.cluster.Cluster.connection_factory
+  File "cassandra/connection.py", line 846, in cassandra.connection.Connection.factory
+  File "/home/airflow/.local/lib/python3.8/site-packages/cassandra/io/libevreactor.py", line 266, in __init__
+    self._connect_socket()
+  File "cassandra/connection.py", line 951, in cassandra.connection.Connection._connect_socket
+OSError: [Errno None] Tried connecting to [('172.21.0.4', 9042)]. Last error: timed out
+[2024-04-08T15:12:09.022+0000] {thread.py:57} WARNING - [control connection] Error connecting to 172.21.0.4:9042:
+Traceback (most recent call last):
+  File "cassandra/cluster.py", line 3577, in cassandra.cluster.ControlConnection._reconnect_internal
+  File "cassandra/cluster.py", line 3599, in cassandra.cluster.ControlConnection._try_connect
+  File "cassandra/cluster.py", line 1670, in cassandra.cluster.Cluster.connection_factory
+  File "cassandra/connection.py", line 846, in cassandra.connection.Connection.factory
+  File "/home/airflow/.local/lib/python3.8/site-packages/cassandra/io/libevreactor.py", line 266, in __init__
+    self._connect_socket()
+  File "cassandra/connection.py", line 951, in cassandra.connection.Connection._connect_socket
+OSError: [Errno None] Tried connecting to [('172.21.0.4', 9042)]. Last error: timed out
+[2024-04-08T15:12:09.841+0000] {thread.py:57} WARNING - [control connection] Error connecting to 172.21.0.4:9042:
+Traceback (most recent call last):
+  File "cassandra/cluster.py", line 3577, in cassandra.cluster.ControlConnection._reconnect_internal
+  File "cassandra/cluster.py", line 3599, in cassandra.cluster.ControlConnection._try_connect
+  File "cassandra/cluster.py", line 1670, in cassandra.cluster.Cluster.connection_factory
+  File "cassandra/connection.py", line 846, in cassandra.connection.Connection.factory
+  File "/home/airflow/.local/lib/python3.8/site-packages/cassandra/io/libevreactor.py", line 266, in __init__
+    self._connect_socket()
+  File "cassandra/connection.py", line 951, in cassandra.connection.Connection._connect_socket
+OSError: [Errno None] Tried connecting to [('172.21.0.4', 9042)]. Last error: timed out
+[2024-04-08T15:12:12.187+0000] {thread.py:57} WARNING - [control connection] Error connecting to 172.21.0.4:9042:
+Traceback (most recent call last):
+  File "cassandra/cluster.py", line 3577, in cassandra.cluster.ControlConnection._reconnect_internal
+  File "cassandra/cluster.py", line 3599, in cassandra.cluster.ControlConnection._try_connect
+  File "cassandra/cluster.py", line 1670, in cassandra.cluster.Cluster.connection_factory
+  File "cassandra/connection.py", line 846, in cassandra.connection.Connection.factory
+  File "/home/airflow/.local/lib/python3.8/site-packages/cassandra/io/libevreactor.py", line 266, in __init__
+    self._connect_socket()
+  File "cassandra/connection.py", line 951, in cassandra.connection.Connection._connect_socket
+OSError: [Errno 113] Tried connecting to [('172.21.0.4', 9042)]. Last error: No route to host
+[2024-04-08T15:12:12.188+0000] {thread.py:57} WARNING - [control connection] Error connecting to 172.21.0.4:9042:
+Traceback (most recent call last):
+  File "cassandra/cluster.py", line 3577, in cassandra.cluster.ControlConnection._reconnect_internal
+  File "cassandra/cluster.py", line 3599, in cassandra.cluster.ControlConnection._try_connect
+  File "cassandra/cluster.py", line 1670, in cassandra.cluster.Cluster.connection_factory
+  File "cassandra/connection.py", line 846, in cassandra.connection.Connection.factory
+  File "/home/airflow/.local/lib/python3.8/site-packages/cassandra/io/libevreactor.py", line 266, in __init__
+    self._connect_socket()
+  File "cassandra/connection.py", line 951, in cassandra.connection.Connection._connect_socket
+OSError: [Errno 113] Tried connecting to [('172.21.0.4', 9042)]. Last error: No route to host
+[2024-04-08T15:12:12.189+0000] {thread.py:57} WARNING - [control connection] Error connecting to 172.21.0.4:9042:
+Traceback (most recent call last):
+  File "cassandra/cluster.py", line 3577, in cassandra.cluster.ControlConnection._reconnect_internal
+  File "cassandra/cluster.py", line 3599, in cassandra.cluster.ControlConnection._try_connect
+  File "cassandra/cluster.py", line 1670, in cassandra.cluster.Cluster.connection_factory
+  File "cassandra/connection.py", line 846, in cassandra.connection.Connection.factory
+  File "/home/airflow/.local/lib/python3.8/site-packages/cassandra/io/libevreactor.py", line 266, in __init__
+    self._connect_socket()
+  File "cassandra/connection.py", line 951, in cassandra.connection.Connection._connect_socket
+OSError: [Errno 113] Tried connecting to [('172.21.0.4', 9042)]. Last error: No route to host
+[2024-04-08T15:12:12.189+0000] {thread.py:57} WARNING - [control connection] Error connecting to 172.21.0.4:9042:
+Traceback (most recent call last):
+  File "cassandra/cluster.py", line 3577, in cassandra.cluster.ControlConnection._reconnect_internal
+  File "cassandra/cluster.py", line 3599, in cassandra.cluster.ControlConnection._try_connect
+  File "cassandra/cluster.py", line 1670, in cassandra.cluster.Cluster.connection_factory
+  File "cassandra/connection.py", line 846, in cassandra.connection.Connection.factory
+  File "/home/airflow/.local/lib/python3.8/site-packages/cassandra/io/libevreactor.py", line 266, in __init__
+    self._connect_socket()
+  File "cassandra/connection.py", line 951, in cassandra.connection.Connection._connect_socket
+OSError: [Errno 113] Tried connecting to [('172.21.0.4', 9042)]. Last error: No route to host
+[2024-04-08T15:12:15.306+0000] {thread.py:57} WARNING - [control connection] Error connecting to 172.21.0.4:9042:
+Traceback (most recent call last):
+  File "cassandra/cluster.py", line 3577, in cassandra.cluster.ControlConnection._reconnect_internal
+  File "cassandra/cluster.py", line 3599, in cassandra.cluster.ControlConnection._try_connect
+  File "cassandra/cluster.py", line 1670, in cassandra.cluster.Cluster.connection_factory
+  File "cassandra/connection.py", line 846, in cassandra.connection.Connection.factory
+  File "/home/airflow/.local/lib/python3.8/site-packages/cassandra/io/libevreactor.py", line 266, in __init__
+    self._connect_socket()
+  File "cassandra/connection.py", line 951, in cassandra.connection.Connection._connect_socket
+OSError: [Errno 113] Tried connecting to [('172.21.0.4', 9042)]. Last error: No route to host
+[2024-04-08T15:12:18.427+0000] {thread.py:57} WARNING - [control connection] Error connecting to 172.21.0.4:9042:
+Traceback (most recent call last):
+  File "cassandra/cluster.py", line 3577, in cassandra.cluster.ControlConnection._reconnect_internal
+  File "cassandra/cluster.py", line 3599, in cassandra.cluster.ControlConnection._try_connect
+  File "cassandra/cluster.py", line 1670, in cassandra.cluster.Cluster.connection_factory
+  File "cassandra/connection.py", line 846, in cassandra.connection.Connection.factory
+  File "/home/airflow/.local/lib/python3.8/site-packages/cassandra/io/libevreactor.py", line 266, in __init__
+    self._connect_socket()
+  File "cassandra/connection.py", line 951, in cassandra.connection.Connection._connect_socket
+OSError: [Errno 113] Tried connecting to [('172.21.0.4', 9042)]. Last error: No route to host
+[2024-04-08T15:12:18.429+0000] {thread.py:57} WARNING - [control connection] Error connecting to 172.21.0.4:9042:
+Traceback (most recent call last):
+  File "cassandra/cluster.py", line 3577, in cassandra.cluster.ControlConnection._reconnect_internal
+  File "cassandra/cluster.py", line 3599, in cassandra.cluster.ControlConnection._try_connect
+  File "cassandra/cluster.py", line 1670, in cassandra.cluster.Cluster.connection_factory
+  File "cassandra/connection.py", line 846, in cassandra.connection.Connection.factory
+  File "/home/airflow/.local/lib/python3.8/site-packages/cassandra/io/libevreactor.py", line 266, in __init__
+    self._connect_socket()
+  File "cassandra/connection.py", line 951, in cassandra.connection.Connection._connect_socket
+OSError: [Errno 113] Tried connecting to [('172.21.0.4', 9042)]. Last error: No route to host
+[2024-04-08T15:12:21.546+0000] {thread.py:57} WARNING - [control connection] Error connecting to 172.21.0.4:9042:
+Traceback (most recent call last):
+  File "cassandra/cluster.py", line 3577, in cassandra.cluster.ControlConnection._reconnect_internal
+  File "cassandra/cluster.py", line 3599, in cassandra.cluster.ControlConnection._try_connect
+  File "cassandra/cluster.py", line 1670, in cassandra.cluster.Cluster.connection_factory
+  File "cassandra/connection.py", line 846, in cassandra.connection.Connection.factory
+  File "/home/airflow/.local/lib/python3.8/site-packages/cassandra/io/libevreactor.py", line 266, in __init__
+    self._connect_socket()
+  File "cassandra/connection.py", line 951, in cassandra.connection.Connection._connect_socket
+OSError: [Errno 113] Tried connecting to [('172.21.0.4', 9042)]. Last error: No route to host
+[2024-04-08T15:12:21.550+0000] {thread.py:57} WARNING - [control connection] Error connecting to 172.21.0.4:9042:
+Traceback (most recent call last):
+  File "cassandra/cluster.py", line 3577, in cassandra.cluster.ControlConnection._reconnect_internal
+  File "cassandra/cluster.py", line 3599, in cassandra.cluster.ControlConnection._try_connect
+  File "cassandra/cluster.py", line 1670, in cassandra.cluster.Cluster.connection_factory
+  File "cassandra/connection.py", line 846, in cassandra.connection.Connection.factory
+  File "/home/airflow/.local/lib/python3.8/site-packages/cassandra/io/libevreactor.py", line 266, in __init__
+    self._connect_socket()
+  File "cassandra/connection.py", line 951, in cassandra.connection.Connection._connect_socket
+OSError: [Errno 113] Tried connecting to [('172.21.0.4', 9042)]. Last error: No route to host
+[2024-04-08T15:12:25.476+0000] {thread.py:57} WARNING - [control connection] Error connecting to 172.21.0.4:9042:
+Traceback (most recent call last):
+  File "cassandra/cluster.py", line 3577, in cassandra.cluster.ControlConnection._reconnect_internal
+  File "cassandra/cluster.py", line 3599, in cassandra.cluster.ControlConnection._try_connect
+  File "cassandra/cluster.py", line 1670, in cassandra.cluster.Cluster.connection_factory
+  File "cassandra/connection.py", line 846, in cassandra.connection.Connection.factory
+  File "/home/airflow/.local/lib/python3.8/site-packages/cassandra/io/libevreactor.py", line 266, in __init__
+    self._connect_socket()
+  File "cassandra/connection.py", line 951, in cassandra.connection.Connection._connect_socket
+OSError: [Errno 113] Tried connecting to [('172.21.0.4', 9042)]. Last error: No route to host
+[2024-04-08T15:12:25.762+0000] {thread.py:57} WARNING - [control connection] Error connecting to 172.21.0.4:9042:
+Traceback (most recent call last):
+  File "cassandra/cluster.py", line 3577, in cassandra.cluster.ControlConnection._reconnect_internal
+  File "cassandra/cluster.py", line 3599, in cassandra.cluster.ControlConnection._try_connect
+  File "cassandra/cluster.py", line 1670, in cassandra.cluster.Cluster.connection_factory
+  File "cassandra/connection.py", line 846, in cassandra.connection.Connection.factory
+  File "/home/airflow/.local/lib/python3.8/site-packages/cassandra/io/libevreactor.py", line 266, in __init__
+    self._connect_socket()
+  File "cassandra/connection.py", line 951, in cassandra.connection.Connection._connect_socket
+ConnectionRefusedError: [Errno 111] Tried connecting to [('172.21.0.4', 9042)]. Last error: Connection refused
+[2024-04-08T15:12:27.069+0000] {thread.py:57} WARNING - [control connection] Error connecting to 172.21.0.4:9042:
+Traceback (most recent call last):
+  File "cassandra/cluster.py", line 3577, in cassandra.cluster.ControlConnection._reconnect_internal
+  File "cassandra/cluster.py", line 3599, in cassandra.cluster.ControlConnection._try_connect
+  File "cassandra/cluster.py", line 1670, in cassandra.cluster.Cluster.connection_factory
+  File "cassandra/connection.py", line 846, in cassandra.connection.Connection.factory
+  File "/home/airflow/.local/lib/python3.8/site-packages/cassandra/io/libevreactor.py", line 266, in __init__
+    self._connect_socket()
+  File "cassandra/connection.py", line 951, in cassandra.connection.Connection._connect_socket
+ConnectionRefusedError: [Errno 111] Tried connecting to [('172.21.0.4', 9042)]. Last error: Connection refused
+[2024-04-08T15:12:28.907+0000] {thread.py:57} WARNING - [control connection] Error connecting to 172.21.0.4:9042:
+Traceback (most recent call last):
+  File "cassandra/cluster.py", line 3577, in cassandra.cluster.ControlConnection._reconnect_internal
+  File "cassandra/cluster.py", line 3599, in cassandra.cluster.ControlConnection._try_connect
+  File "cassandra/cluster.py", line 1670, in cassandra.cluster.Cluster.connection_factory
+  File "cassandra/connection.py", line 846, in cassandra.connection.Connection.factory
+  File "/home/airflow/.local/lib/python3.8/site-packages/cassandra/io/libevreactor.py", line 266, in __init__
+    self._connect_socket()
+  File "cassandra/connection.py", line 951, in cassandra.connection.Connection._connect_socket
+ConnectionRefusedError: [Errno 111] Tried connecting to [('172.21.0.4', 9042)]. Last error: Connection refused
+[2024-04-08T15:12:28.986+0000] {thread.py:57} WARNING - [control connection] Error connecting to 172.21.0.4:9042:
+Traceback (most recent call last):
+  File "cassandra/cluster.py", line 3577, in cassandra.cluster.ControlConnection._reconnect_internal
+  File "cassandra/cluster.py", line 3599, in cassandra.cluster.ControlConnection._try_connect
+  File "cassandra/cluster.py", line 1670, in cassandra.cluster.Cluster.connection_factory
+  File "cassandra/connection.py", line 846, in cassandra.connection.Connection.factory
+  File "/home/airflow/.local/lib/python3.8/site-packages/cassandra/io/libevreactor.py", line 266, in __init__
+    self._connect_socket()
+  File "cassandra/connection.py", line 951, in cassandra.connection.Connection._connect_socket
+ConnectionRefusedError: [Errno 111] Tried connecting to [('172.21.0.4', 9042)]. Last error: Connection refused
+[2024-04-08T15:12:28.988+0000] {thread.py:57} WARNING - [control connection] Error connecting to 172.21.0.4:9042:
+Traceback (most recent call last):
+  File "cassandra/cluster.py", line 3577, in cassandra.cluster.ControlConnection._reconnect_internal
+  File "cassandra/cluster.py", line 3599, in cassandra.cluster.ControlConnection._try_connect
+  File "cassandra/cluster.py", line 1670, in cassandra.cluster.Cluster.connection_factory
+  File "cassandra/connection.py", line 846, in cassandra.connection.Connection.factory
+  File "/home/airflow/.local/lib/python3.8/site-packages/cassandra/io/libevreactor.py", line 266, in __init__
+    self._connect_socket()
+  File "cassandra/connection.py", line 951, in cassandra.connection.Connection._connect_socket
+ConnectionRefusedError: [Errno 111] Tried connecting to [('172.21.0.4', 9042)]. Last error: Connection refused
+[2024-04-08T15:12:29.001+0000] {thread.py:57} WARNING - [control connection] Error connecting to 172.21.0.4:9042:
+Traceback (most recent call last):
+  File "cassandra/cluster.py", line 3577, in cassandra.cluster.ControlConnection._reconnect_internal
+  File "cassandra/cluster.py", line 3599, in cassandra.cluster.ControlConnection._try_connect
+  File "cassandra/cluster.py", line 1670, in cassandra.cluster.Cluster.connection_factory
+  File "cassandra/connection.py", line 846, in cassandra.connection.Connection.factory
+  File "/home/airflow/.local/lib/python3.8/site-packages/cassandra/io/libevreactor.py", line 266, in __init__
+    self._connect_socket()
+  File "cassandra/connection.py", line 951, in cassandra.connection.Connection._connect_socket
+ConnectionRefusedError: [Errno 111] Tried connecting to [('172.21.0.4', 9042)]. Last error: Connection refused
+[2024-04-08T15:12:29.097+0000] {thread.py:57} WARNING - [control connection] Error connecting to 172.21.0.4:9042:
+Traceback (most recent call last):
+  File "cassandra/cluster.py", line 3577, in cassandra.cluster.ControlConnection._reconnect_internal
+  File "cassandra/cluster.py", line 3599, in cassandra.cluster.ControlConnection._try_connect
+  File "cassandra/cluster.py", line 1670, in cassandra.cluster.Cluster.connection_factory
+  File "cassandra/connection.py", line 846, in cassandra.connection.Connection.factory
+  File "/home/airflow/.local/lib/python3.8/site-packages/cassandra/io/libevreactor.py", line 266, in __init__
+    self._connect_socket()
+  File "cassandra/connection.py", line 951, in cassandra.connection.Connection._connect_socket
+ConnectionRefusedError: [Errno 111] Tried connecting to [('172.21.0.4', 9042)]. Last error: Connection refused
+[2024-04-08T15:12:29.989+0000] {thread.py:57} WARNING - [control connection] Error connecting to 172.21.0.4:9042:
+Traceback (most recent call last):
+  File "cassandra/cluster.py", line 3577, in cassandra.cluster.ControlConnection._reconnect_internal
+  File "cassandra/cluster.py", line 3599, in cassandra.cluster.ControlConnection._try_connect
+  File "cassandra/cluster.py", line 1670, in cassandra.cluster.Cluster.connection_factory
+  File "cassandra/connection.py", line 846, in cassandra.connection.Connection.factory
+  File "/home/airflow/.local/lib/python3.8/site-packages/cassandra/io/libevreactor.py", line 266, in __init__
+    self._connect_socket()
+  File "cassandra/connection.py", line 951, in cassandra.connection.Connection._connect_socket
+ConnectionRefusedError: [Errno 111] Tried connecting to [('172.21.0.4', 9042)]. Last error: Connection refused
+[2024-04-08T15:12:30.003+0000] {thread.py:57} WARNING - [control connection] Error connecting to 172.21.0.4:9042:
+Traceback (most recent call last):
+  File "cassandra/cluster.py", line 3577, in cassandra.cluster.ControlConnection._reconnect_internal
+  File "cassandra/cluster.py", line 3599, in cassandra.cluster.ControlConnection._try_connect
+  File "cassandra/cluster.py", line 1670, in cassandra.cluster.Cluster.connection_factory
+  File "cassandra/connection.py", line 846, in cassandra.connection.Connection.factory
+  File "/home/airflow/.local/lib/python3.8/site-packages/cassandra/io/libevreactor.py", line 266, in __init__
+    self._connect_socket()
+  File "cassandra/connection.py", line 951, in cassandra.connection.Connection._connect_socket
+ConnectionRefusedError: [Errno 111] Tried connecting to [('172.21.0.4', 9042)]. Last error: Connection refused
+[2024-04-08T15:12:30.083+0000] {thread.py:57} WARNING - [control connection] Error connecting to 172.21.0.4:9042:
+Traceback (most recent call last):
+  File "cassandra/cluster.py", line 3577, in cassandra.cluster.ControlConnection._reconnect_internal
+  File "cassandra/cluster.py", line 3599, in cassandra.cluster.ControlConnection._try_connect
+  File "cassandra/cluster.py", line 1670, in cassandra.cluster.Cluster.connection_factory
+  File "cassandra/connection.py", line 846, in cassandra.connection.Connection.factory
+  File "/home/airflow/.local/lib/python3.8/site-packages/cassandra/io/libevreactor.py", line 266, in __init__
+    self._connect_socket()
+  File "cassandra/connection.py", line 951, in cassandra.connection.Connection._connect_socket
+ConnectionRefusedError: [Errno 111] Tried connecting to [('172.21.0.4', 9042)]. Last error: Connection refused
+[2024-04-08T15:12:30.090+0000] {thread.py:57} WARNING - [control connection] Error connecting to 172.21.0.4:9042:
+Traceback (most recent call last):
+  File "cassandra/cluster.py", line 3577, in cassandra.cluster.ControlConnection._reconnect_internal
+  File "cassandra/cluster.py", line 3599, in cassandra.cluster.ControlConnection._try_connect
+  File "cassandra/cluster.py", line 1670, in cassandra.cluster.Cluster.connection_factory
+  File "cassandra/connection.py", line 846, in cassandra.connection.Connection.factory
+  File "/home/airflow/.local/lib/python3.8/site-packages/cassandra/io/libevreactor.py", line 266, in __init__
+    self._connect_socket()
+  File "cassandra/connection.py", line 951, in cassandra.connection.Connection._connect_socket
+ConnectionRefusedError: [Errno 111] Tried connecting to [('172.21.0.4', 9042)]. Last error: Connection refused
+[2024-04-08T15:12:30.290+0000] {thread.py:57} WARNING - [control connection] Error connecting to 172.21.0.4:9042:
+Traceback (most recent call last):
+  File "cassandra/cluster.py", line 3577, in cassandra.cluster.ControlConnection._reconnect_internal
+  File "cassandra/cluster.py", line 3599, in cassandra.cluster.ControlConnection._try_connect
+  File "cassandra/cluster.py", line 1670, in cassandra.cluster.Cluster.connection_factory
+  File "cassandra/connection.py", line 846, in cassandra.connection.Connection.factory
+  File "/home/airflow/.local/lib/python3.8/site-packages/cassandra/io/libevreactor.py", line 266, in __init__
+    self._connect_socket()
+  File "cassandra/connection.py", line 951, in cassandra.connection.Connection._connect_socket
+ConnectionRefusedError: [Errno 111] Tried connecting to [('172.21.0.4', 9042)]. Last error: Connection refused
+[2024-04-08T15:12:30.889+0000] {record.py:71} INFO - Sensor check existence of record: ['user_id', 'age', 'email', 'name']
+[2024-04-08T15:12:30.910+0000] {base.py:83} INFO - Using connection ID 'cassandra_conn' for task execution.
+[2024-04-08T15:12:30.920+0000] {cassandra.py:128} WARNING - [control connection] Error connecting to 172.21.0.4:9042:
+Traceback (most recent call last):
+  File "cassandra/cluster.py", line 3577, in cassandra.cluster.ControlConnection._reconnect_internal
+  File "cassandra/cluster.py", line 3599, in cassandra.cluster.ControlConnection._try_connect
+  File "cassandra/cluster.py", line 1670, in cassandra.cluster.Cluster.connection_factory
+  File "cassandra/connection.py", line 846, in cassandra.connection.Connection.factory
+  File "/home/airflow/.local/lib/python3.8/site-packages/cassandra/io/libevreactor.py", line 266, in __init__
+    self._connect_socket()
+  File "cassandra/connection.py", line 951, in cassandra.connection.Connection._connect_socket
+ConnectionRefusedError: [Errno 111] Tried connecting to [('172.21.0.4', 9042)]. Last error: Connection refused
+[2024-04-08T15:12:30.921+0000] {cassandra.py:128} ERROR - Control connection failed to connect, shutting down Cluster:
+Traceback (most recent call last):
+  File "cassandra/cluster.py", line 1740, in cassandra.cluster.Cluster.connect
+  File "cassandra/cluster.py", line 3543, in cassandra.cluster.ControlConnection.connect
+  File "cassandra/cluster.py", line 3588, in cassandra.cluster.ControlConnection._reconnect_internal
+cassandra.cluster.NoHostAvailable: ('Unable to connect to any servers', {'172.21.0.4:9042': ConnectionRefusedError(111, "Tried connecting to [('172.21.0.4', 9042)]. Last error: Connection refused")})
+[2024-04-08T15:12:31.914+0000] {thread.py:57} WARNING - [control connection] Error connecting to 172.21.0.4:9042:
+Traceback (most recent call last):
+  File "cassandra/cluster.py", line 3577, in cassandra.cluster.ControlConnection._reconnect_internal
+  File "cassandra/cluster.py", line 3599, in cassandra.cluster.ControlConnection._try_connect
+  File "cassandra/cluster.py", line 1670, in cassandra.cluster.Cluster.connection_factory
+  File "cassandra/connection.py", line 846, in cassandra.connection.Connection.factory
+  File "/home/airflow/.local/lib/python3.8/site-packages/cassandra/io/libevreactor.py", line 266, in __init__
+    self._connect_socket()
+  File "cassandra/connection.py", line 951, in cassandra.connection.Connection._connect_socket
+ConnectionRefusedError: [Errno 111] Tried connecting to [('172.21.0.4', 9042)]. Last error: Connection refused
+[2024-04-08T15:12:31.989+0000] {thread.py:57} WARNING - [control connection] Error connecting to 172.21.0.4:9042:
+Traceback (most recent call last):
+  File "cassandra/cluster.py", line 3577, in cassandra.cluster.ControlConnection._reconnect_internal
+  File "cassandra/cluster.py", line 3599, in cassandra.cluster.ControlConnection._try_connect
+  File "cassandra/cluster.py", line 1670, in cassandra.cluster.Cluster.connection_factory
+  File "cassandra/connection.py", line 846, in cassandra.connection.Connection.factory
+  File "/home/airflow/.local/lib/python3.8/site-packages/cassandra/io/libevreactor.py", line 266, in __init__
+    self._connect_socket()
+  File "cassandra/connection.py", line 951, in cassandra.connection.Connection._connect_socket
+ConnectionRefusedError: [Errno 111] Tried connecting to [('172.21.0.4', 9042)]. Last error: Connection refused
+[2024-04-08T15:12:32.002+0000] {thread.py:57} WARNING - [control connection] Error connecting to 172.21.0.4:9042:
+Traceback (most recent call last):
+  File "cassandra/cluster.py", line 3577, in cassandra.cluster.ControlConnection._reconnect_internal
+  File "cassandra/cluster.py", line 3599, in cassandra.cluster.ControlConnection._try_connect
+  File "cassandra/cluster.py", line 1670, in cassandra.cluster.Cluster.connection_factory
+  File "cassandra/connection.py", line 846, in cassandra.connection.Connection.factory
+  File "/home/airflow/.local/lib/python3.8/site-packages/cassandra/io/libevreactor.py", line 266, in __init__
+    self._connect_socket()
+  File "cassandra/connection.py", line 951, in cassandra.connection.Connection._connect_socket
+ConnectionRefusedError: [Errno 111] Tried connecting to [('172.21.0.4', 9042)]. Last error: Connection refused
+[2024-04-08T15:12:32.202+0000] {thread.py:57} WARNING - [control connection] Error connecting to 172.21.0.4:9042:
+Traceback (most recent call last):
+  File "cassandra/cluster.py", line 3577, in cassandra.cluster.ControlConnection._reconnect_internal
+  File "cassandra/cluster.py", line 3599, in cassandra.cluster.ControlConnection._try_connect
+  File "cassandra/cluster.py", line 1670, in cassandra.cluster.Cluster.connection_factory
+  File "cassandra/connection.py", line 846, in cassandra.connection.Connection.factory
+  File "/home/airflow/.local/lib/python3.8/site-packages/cassandra/io/libevreactor.py", line 266, in __init__
+    self._connect_socket()
+  File "cassandra/connection.py", line 951, in cassandra.connection.Connection._connect_socket
+ConnectionRefusedError: [Errno 111] Tried connecting to [('172.21.0.4', 9042)]. Last error: Connection refused
+[2024-04-08T15:12:32.606+0000] {thread.py:57} WARNING - [control connection] Error connecting to 172.21.0.4:9042:
+Traceback (most recent call last):
+  File "cassandra/cluster.py", line 3577, in cassandra.cluster.ControlConnection._reconnect_internal
+  File "cassandra/cluster.py", line 3599, in cassandra.cluster.ControlConnection._try_connect
+  File "cassandra/cluster.py", line 1670, in cassandra.cluster.Cluster.connection_factory
+  File "cassandra/connection.py", line 846, in cassandra.connection.Connection.factory
+  File "/home/airflow/.local/lib/python3.8/site-packages/cassandra/io/libevreactor.py", line 266, in __init__
+    self._connect_socket()
+  File "cassandra/connection.py", line 951, in cassandra.connection.Connection._connect_socket
+ConnectionRefusedError: [Errno 111] Tried connecting to [('172.21.0.4', 9042)]. Last error: Connection refused
+[2024-04-08T15:12:35.815+0000] {thread.py:57} WARNING - [control connection] Error connecting to 172.21.0.4:9042:
+Traceback (most recent call last):
+  File "cassandra/cluster.py", line 3577, in cassandra.cluster.ControlConnection._reconnect_internal
+  File "cassandra/cluster.py", line 3599, in cassandra.cluster.ControlConnection._try_connect
+  File "cassandra/cluster.py", line 1670, in cassandra.cluster.Cluster.connection_factory
+  File "cassandra/connection.py", line 846, in cassandra.connection.Connection.factory
+  File "/home/airflow/.local/lib/python3.8/site-packages/cassandra/io/libevreactor.py", line 266, in __init__
+    self._connect_socket()
+  File "cassandra/connection.py", line 951, in cassandra.connection.Connection._connect_socket
+ConnectionRefusedError: [Errno 111] Tried connecting to [('172.21.0.4', 9042)]. Last error: Connection refused
+[2024-04-08T15:12:36.368+0000] {thread.py:57} WARNING - [control connection] Error connecting to 172.21.0.4:9042:
+Traceback (most recent call last):
+  File "cassandra/cluster.py", line 3577, in cassandra.cluster.ControlConnection._reconnect_internal
+  File "cassandra/cluster.py", line 3599, in cassandra.cluster.ControlConnection._try_connect
+  File "cassandra/cluster.py", line 1670, in cassandra.cluster.Cluster.connection_factory
+  File "cassandra/connection.py", line 846, in cassandra.connection.Connection.factory
+  File "/home/airflow/.local/lib/python3.8/site-packages/cassandra/io/libevreactor.py", line 266, in __init__
+    self._connect_socket()
+  File "cassandra/connection.py", line 951, in cassandra.connection.Connection._connect_socket
+ConnectionRefusedError: [Errno 111] Tried connecting to [('172.21.0.4', 9042)]. Last error: Connection refused
+[2024-04-08T15:12:36.424+0000] {thread.py:57} WARNING - [control connection] Error connecting to 172.21.0.4:9042:
+Traceback (most recent call last):
+  File "cassandra/cluster.py", line 3577, in cassandra.cluster.ControlConnection._reconnect_internal
+  File "cassandra/cluster.py", line 3599, in cassandra.cluster.ControlConnection._try_connect
+  File "cassandra/cluster.py", line 1670, in cassandra.cluster.Cluster.connection_factory
+  File "cassandra/connection.py", line 846, in cassandra.connection.Connection.factory
+  File "/home/airflow/.local/lib/python3.8/site-packages/cassandra/io/libevreactor.py", line 266, in __init__
+    self._connect_socket()
+  File "cassandra/connection.py", line 951, in cassandra.connection.Connection._connect_socket
+ConnectionRefusedError: [Errno 111] Tried connecting to [('172.21.0.4', 9042)]. Last error: Connection refused
+[2024-04-08T15:12:36.522+0000] {thread.py:57} WARNING - [control connection] Error connecting to 172.21.0.4:9042:
+Traceback (most recent call last):
+  File "cassandra/cluster.py", line 3577, in cassandra.cluster.ControlConnection._reconnect_internal
+  File "cassandra/cluster.py", line 3599, in cassandra.cluster.ControlConnection._try_connect
+  File "cassandra/cluster.py", line 1670, in cassandra.cluster.Cluster.connection_factory
+  File "cassandra/connection.py", line 846, in cassandra.connection.Connection.factory
+  File "/home/airflow/.local/lib/python3.8/site-packages/cassandra/io/libevreactor.py", line 266, in __init__
+    self._connect_socket()
+  File "cassandra/connection.py", line 951, in cassandra.connection.Connection._connect_socket
+ConnectionRefusedError: [Errno 111] Tried connecting to [('172.21.0.4', 9042)]. Last error: Connection refused
+[2024-04-08T15:12:36.637+0000] {thread.py:57} WARNING - [control connection] Error connecting to 172.21.0.4:9042:
+Traceback (most recent call last):
+  File "cassandra/cluster.py", line 3577, in cassandra.cluster.ControlConnection._reconnect_internal
+  File "cassandra/cluster.py", line 3599, in cassandra.cluster.ControlConnection._try_connect
+  File "cassandra/cluster.py", line 1670, in cassandra.cluster.Cluster.connection_factory
+  File "cassandra/connection.py", line 846, in cassandra.connection.Connection.factory
+  File "/home/airflow/.local/lib/python3.8/site-packages/cassandra/io/libevreactor.py", line 266, in __init__
+    self._connect_socket()
+  File "cassandra/connection.py", line 951, in cassandra.connection.Connection._connect_socket
+ConnectionRefusedError: [Errno 111] Tried connecting to [('172.21.0.4', 9042)]. Last error: Connection refused
+[2024-04-08T15:12:43.968+0000] {thread.py:57} WARNING - [control connection] Error connecting to 172.21.0.4:9042:
+Traceback (most recent call last):
+  File "cassandra/cluster.py", line 3577, in cassandra.cluster.ControlConnection._reconnect_internal
+  File "cassandra/cluster.py", line 3599, in cassandra.cluster.ControlConnection._try_connect
+  File "cassandra/cluster.py", line 1670, in cassandra.cluster.Cluster.connection_factory
+  File "cassandra/connection.py", line 846, in cassandra.connection.Connection.factory
+  File "/home/airflow/.local/lib/python3.8/site-packages/cassandra/io/libevreactor.py", line 266, in __init__
+    self._connect_socket()
+  File "cassandra/connection.py", line 951, in cassandra.connection.Connection._connect_socket
+ConnectionRefusedError: [Errno 111] Tried connecting to [('172.21.0.4', 9042)]. Last error: Connection refused
+[2024-04-08T15:12:44.715+0000] {thread.py:57} WARNING - [control connection] Error connecting to 172.21.0.4:9042:
+Traceback (most recent call last):
+  File "cassandra/cluster.py", line 3577, in cassandra.cluster.ControlConnection._reconnect_internal
+  File "cassandra/cluster.py", line 3599, in cassandra.cluster.ControlConnection._try_connect
+  File "cassandra/cluster.py", line 1670, in cassandra.cluster.Cluster.connection_factory
+  File "cassandra/connection.py", line 846, in cassandra.connection.Connection.factory
+  File "/home/airflow/.local/lib/python3.8/site-packages/cassandra/io/libevreactor.py", line 266, in __init__
+    self._connect_socket()
+  File "cassandra/connection.py", line 951, in cassandra.connection.Connection._connect_socket
+ConnectionRefusedError: [Errno 111] Tried connecting to [('172.21.0.4', 9042)]. Last error: Connection refused
+[2024-04-08T15:12:44.871+0000] {thread.py:57} WARNING - [control connection] Error connecting to 172.21.0.4:9042:
+Traceback (most recent call last):
+  File "cassandra/cluster.py", line 3577, in cassandra.cluster.ControlConnection._reconnect_internal
+  File "cassandra/cluster.py", line 3599, in cassandra.cluster.ControlConnection._try_connect
+  File "cassandra/cluster.py", line 1670, in cassandra.cluster.Cluster.connection_factory
+  File "cassandra/connection.py", line 846, in cassandra.connection.Connection.factory
+  File "/home/airflow/.local/lib/python3.8/site-packages/cassandra/io/libevreactor.py", line 266, in __init__
+    self._connect_socket()
+  File "cassandra/connection.py", line 951, in cassandra.connection.Connection._connect_socket
+ConnectionRefusedError: [Errno 111] Tried connecting to [('172.21.0.4', 9042)]. Last error: Connection refused
+[2024-04-08T15:12:44.955+0000] {thread.py:57} WARNING - [control connection] Error connecting to 172.21.0.4:9042:
+Traceback (most recent call last):
+  File "cassandra/cluster.py", line 3577, in cassandra.cluster.ControlConnection._reconnect_internal
+  File "cassandra/cluster.py", line 3599, in cassandra.cluster.ControlConnection._try_connect
+  File "cassandra/cluster.py", line 1670, in cassandra.cluster.Cluster.connection_factory
+  File "cassandra/connection.py", line 846, in cassandra.connection.Connection.factory
+  File "/home/airflow/.local/lib/python3.8/site-packages/cassandra/io/libevreactor.py", line 266, in __init__
+    self._connect_socket()
+  File "cassandra/connection.py", line 951, in cassandra.connection.Connection._connect_socket
+ConnectionRefusedError: [Errno 111] Tried connecting to [('172.21.0.4', 9042)]. Last error: Connection refused
+[2024-04-08T15:12:45.732+0000] {thread.py:57} WARNING - [control connection] Error connecting to 172.21.0.4:9042:
+Traceback (most recent call last):
+  File "cassandra/cluster.py", line 3577, in cassandra.cluster.ControlConnection._reconnect_internal
+  File "cassandra/cluster.py", line 3599, in cassandra.cluster.ControlConnection._try_connect
+  File "cassandra/cluster.py", line 1670, in cassandra.cluster.Cluster.connection_factory
+  File "cassandra/connection.py", line 846, in cassandra.connection.Connection.factory
+  File "/home/airflow/.local/lib/python3.8/site-packages/cassandra/io/libevreactor.py", line 266, in __init__
+    self._connect_socket()
+  File "cassandra/connection.py", line 951, in cassandra.connection.Connection._connect_socket
+ConnectionRefusedError: [Errno 111] Tried connecting to [('172.21.0.4', 9042)]. Last error: Connection refused
+[2024-04-08T15:13:02.564+0000] {thread.py:57} WARNING - [control connection] Error connecting to 172.21.0.4:9042:
+Traceback (most recent call last):
+  File "cassandra/cluster.py", line 3577, in cassandra.cluster.ControlConnection._reconnect_internal
+  File "cassandra/cluster.py", line 3654, in cassandra.cluster.ControlConnection._try_connect
+  File "cassandra/cluster.py", line 3651, in cassandra.cluster.ControlConnection._try_connect
+  File "cassandra/cluster.py", line 3753, in cassandra.cluster.ControlConnection._refresh_schema
+  File "cassandra/metadata.py", line 140, in cassandra.metadata.Metadata.refresh
+  File "cassandra/metadata.py", line 163, in cassandra.metadata.Metadata._rebuild_all
+  File "cassandra/metadata.py", line 2868, in get_all_keyspaces
+  File "cassandra/metadata.py", line 2518, in get_all_keyspaces
+  File "cassandra/metadata.py", line 2027, in get_all_keyspaces
+  File "cassandra/metadata.py", line 2807, in cassandra.metadata.SchemaParserV4._query_all
+  File "cassandra/connection.py", line 1126, in cassandra.connection.Connection.wait_for_responses
+  File "cassandra/connection.py", line 1124, in cassandra.connection.Connection.wait_for_responses
+  File "cassandra/connection.py", line 1636, in cassandra.connection.ResponseWaiter.deliver
+cassandra.OperationTimedOut: errors=None, last_host=None
+[2024-04-08T15:13:02.569+0000] {thread.py:57} WARNING - [control connection] Error connecting to 172.21.0.4:9042:
+Traceback (most recent call last):
+  File "cassandra/cluster.py", line 3577, in cassandra.cluster.ControlConnection._reconnect_internal
+  File "cassandra/cluster.py", line 3654, in cassandra.cluster.ControlConnection._try_connect
+  File "cassandra/cluster.py", line 3625, in cassandra.cluster.ControlConnection._try_connect
+  File "cassandra/connection.py", line 1146, in cassandra.connection.Connection.register_watchers
+  File "cassandra/connection.py", line 1082, in cassandra.connection.Connection.wait_for_response
+  File "cassandra/connection.py", line 1126, in cassandra.connection.Connection.wait_for_responses
+  File "cassandra/connection.py", line 1124, in cassandra.connection.Connection.wait_for_responses
+  File "cassandra/connection.py", line 1636, in cassandra.connection.ResponseWaiter.deliver
+cassandra.OperationTimedOut: errors=None, last_host=None
+[2024-04-08T15:13:31.004+0000] {record.py:71} INFO - Sensor check existence of record: ['user_id', 'age', 'email', 'name']
+[2024-04-08T15:13:31.022+0000] {base.py:83} INFO - Using connection ID 'cassandra_conn' for task execution.
+[2024-04-08T15:13:31.028+0000] {cassandra.py:128} WARNING - Downgrading core protocol version from 66 to 65 for 172.21.0.4:9042. To avoid this, it is best practice to explicitly set Cluster(protocol_version) to the version supported by your cluster. http://datastax.github.io/python-driver/api/cassandra/cluster.html#cassandra.cluster.Cluster.protocol_version
+[2024-04-08T15:13:31.032+0000] {cassandra.py:128} WARNING - Downgrading core protocol version from 65 to 5 for 172.21.0.4:9042. To avoid this, it is best practice to explicitly set Cluster(protocol_version) to the version supported by your cluster. http://datastax.github.io/python-driver/api/cassandra/cluster.html#cassandra.cluster.Cluster.protocol_version
+[2024-04-08T15:14:31.263+0000] {record.py:71} INFO - Sensor check existence of record: ['user_id', 'age', 'email', 'name']
+[2024-04-08T15:14:31.330+0000] {base.py:83} INFO - Using connection ID 'cassandra_conn' for task execution.
+[2024-04-08T15:14:31.630+0000] {cassandra.py:128} WARNING - Downgrading core protocol version from 66 to 65 for 172.21.0.4:9042. To avoid this, it is best practice to explicitly set Cluster(protocol_version) to the version supported by your cluster. http://datastax.github.io/python-driver/api/cassandra/cluster.html#cassandra.cluster.Cluster.protocol_version
+[2024-04-08T15:14:31.663+0000] {cassandra.py:128} WARNING - Downgrading core protocol version from 65 to 5 for 172.21.0.4:9042. To avoid this, it is best practice to explicitly set Cluster(protocol_version) to the version supported by your cluster. http://datastax.github.io/python-driver/api/cassandra/cluster.html#cassandra.cluster.Cluster.protocol_version
+[2024-04-08T15:15:31.906+0000] {job.py:221} ERROR - Job heartbeat failed with error. Scheduler is in unhealthy state
+[2024-04-08T15:15:33.704+0000] {record.py:71} INFO - Sensor check existence of record: ['user_id', 'age', 'email', 'name']
+[2024-04-08T15:15:35.715+0000] {base.py:83} INFO - Using connection ID 'cassandra_conn' for task execution.
+[2024-04-08T15:15:35.987+0000] {cassandra.py:128} WARNING - Downgrading core protocol version from 66 to 65 for 172.21.0.4:9042. To avoid this, it is best practice to explicitly set Cluster(protocol_version) to the version supported by your cluster. http://datastax.github.io/python-driver/api/cassandra/cluster.html#cassandra.cluster.Cluster.protocol_version
+[2024-04-08T15:15:36.002+0000] {cassandra.py:128} WARNING - Downgrading core protocol version from 65 to 5 for 172.21.0.4:9042. To avoid this, it is best practice to explicitly set Cluster(protocol_version) to the version supported by your cluster. http://datastax.github.io/python-driver/api/cassandra/cluster.html#cassandra.cluster.Cluster.protocol_version
+[2024-04-08T15:15:36.697+0000] {taskinstance.py:2731} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/taskinstance.py", line 444, in _execute_task
+    result = _execute_callable(context=context, **execute_callable_kwargs)
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/taskinstance.py", line 414, in _execute_callable
+    return execute_callable(context=context, **execute_callable_kwargs)
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/sensors/base.py", line 282, in execute
+    raise AirflowSensorTimeout(message)
+airflow.exceptions.AirflowSensorTimeout: Sensor has timed out; run duration of 659.6103646870033 seconds exceeds the specified timeout of 600.0.
+[2024-04-08T15:15:36.825+0000] {taskinstance.py:1149} INFO - Immediate failure requested. Marking task as FAILED. dag_id=cassandra_sensor_dag, task_id=cassandra_sensor_record, execution_date=20240408T003000, start_date=20240408T150434, end_date=20240408T151536
+[2024-04-08T15:15:37.052+0000] {standard_task_runner.py:107} ERROR - Failed to execute job 129 for task cassandra_sensor_record (Sensor has timed out; run duration of 659.6103646870033 seconds exceeds the specified timeout of 600.0.; 1585)
+[2024-04-08T15:15:37.868+0000] {local_task_job_runner.py:234} INFO - Task exited with return code 1
+[2024-04-08T15:15:38.984+0000] {taskinstance.py:3312} INFO - 0 downstream tasks scheduled from follow-on schedule check

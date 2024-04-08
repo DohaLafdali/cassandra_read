@@ -1,0 +1,1 @@
+[2024-04-08T14:58:24.415+0000] {scheduler_job_runner.py:780} ERROR - Executor reports task instance <TaskInstance: cassandra_sensor_dag.cassandra_sensor_record scheduled__2024-04-08T00:10:00+00:00 [queued]> finished (failed) although the task says it's queued. (Info: None) Was the task killed externally?

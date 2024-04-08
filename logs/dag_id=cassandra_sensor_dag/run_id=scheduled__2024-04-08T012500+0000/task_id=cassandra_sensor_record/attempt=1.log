@@ -1,0 +1,328 @@
+[2024-04-08T14:58:06.195+0000] {taskinstance.py:1979} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: cassandra_sensor_dag.cassandra_sensor_record scheduled__2024-04-08T01:25:00+00:00 [queued]>
+[2024-04-08T14:58:06.407+0000] {taskinstance.py:1979} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: cassandra_sensor_dag.cassandra_sensor_record scheduled__2024-04-08T01:25:00+00:00 [queued]>
+[2024-04-08T14:58:06.422+0000] {taskinstance.py:2193} INFO - Starting attempt 1 of 2
+[2024-04-08T14:58:06.795+0000] {taskinstance.py:2217} INFO - Executing <Task(CassandraRecordSensor): cassandra_sensor_record> on 2024-04-08 01:25:00+00:00
+[2024-04-08T14:58:06.863+0000] {standard_task_runner.py:60} INFO - Started process 1089 to run task
+[2024-04-08T14:58:06.882+0000] {standard_task_runner.py:87} INFO - Running: ['***', 'tasks', 'run', 'cassandra_sensor_dag', 'cassandra_sensor_record', 'scheduled__2024-04-08T01:25:00+00:00', '--job-id', '106', '--raw', '--subdir', 'DAGS_FOLDER/test.py', '--cfg-path', '/tmp/tmps79j2uno']
+[2024-04-08T14:58:06.931+0000] {standard_task_runner.py:88} INFO - Job 106: Subtask cassandra_sensor_record
+[2024-04-08T14:58:07.375+0000] {task_command.py:423} INFO - Running <TaskInstance: cassandra_sensor_dag.cassandra_sensor_record scheduled__2024-04-08T01:25:00+00:00 [running]> on host c2d2cc8ff432
+[2024-04-08T14:58:07.857+0000] {taskinstance.py:2513} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='cassandra_sensor_dag' AIRFLOW_CTX_TASK_ID='cassandra_sensor_record' AIRFLOW_CTX_EXECUTION_DATE='2024-04-08T01:25:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2024-04-08T01:25:00+00:00'
+[2024-04-08T14:58:07.919+0000] {record.py:71} INFO - Sensor check existence of record: ['user_id', 'age', 'email', 'name']
+[2024-04-08T14:58:08.082+0000] {base.py:83} INFO - Using connection ID 'cassandra_conn' for task execution.
+[2024-04-08T14:58:08.116+0000] {warnings.py:109} WARNING - /home/***/.local/lib/python3.8/site-packages/***/providers/apache/cassandra/hooks/cassandra.py:120: DeprecationWarning: Legacy execution parameters will be removed in 4.0. Consider using execution profiles.
+  self.cluster = Cluster(**conn_config)
+
+[2024-04-08T14:58:08.151+0000] {cassandra.py:128} WARNING - Downgrading core protocol version from 66 to 65 for 172.21.0.4:9042. To avoid this, it is best practice to explicitly set Cluster(protocol_version) to the version supported by your cluster. http://datastax.github.io/python-driver/api/cassandra/cluster.html#cassandra.cluster.Cluster.protocol_version
+[2024-04-08T14:58:08.175+0000] {cassandra.py:128} WARNING - Downgrading core protocol version from 65 to 5 for 172.21.0.4:9042. To avoid this, it is best practice to explicitly set Cluster(protocol_version) to the version supported by your cluster. http://datastax.github.io/python-driver/api/cassandra/cluster.html#cassandra.cluster.Cluster.protocol_version
+[2024-04-08T14:59:08.678+0000] {record.py:71} INFO - Sensor check existence of record: ['user_id', 'age', 'email', 'name']
+[2024-04-08T14:59:08.847+0000] {base.py:83} INFO - Using connection ID 'cassandra_conn' for task execution.
+[2024-04-08T14:59:08.902+0000] {cassandra.py:128} WARNING - Downgrading core protocol version from 66 to 65 for 172.21.0.4:9042. To avoid this, it is best practice to explicitly set Cluster(protocol_version) to the version supported by your cluster. http://datastax.github.io/python-driver/api/cassandra/cluster.html#cassandra.cluster.Cluster.protocol_version
+[2024-04-08T14:59:08.940+0000] {cassandra.py:128} WARNING - Downgrading core protocol version from 65 to 5 for 172.21.0.4:9042. To avoid this, it is best practice to explicitly set Cluster(protocol_version) to the version supported by your cluster. http://datastax.github.io/python-driver/api/cassandra/cluster.html#cassandra.cluster.Cluster.protocol_version
+[2024-04-08T15:00:09.538+0000] {record.py:71} INFO - Sensor check existence of record: ['user_id', 'age', 'email', 'name']
+[2024-04-08T15:00:09.643+0000] {base.py:83} INFO - Using connection ID 'cassandra_conn' for task execution.
+[2024-04-08T15:00:09.687+0000] {cassandra.py:128} WARNING - Downgrading core protocol version from 66 to 65 for 172.21.0.4:9042. To avoid this, it is best practice to explicitly set Cluster(protocol_version) to the version supported by your cluster. http://datastax.github.io/python-driver/api/cassandra/cluster.html#cassandra.cluster.Cluster.protocol_version
+[2024-04-08T15:00:09.755+0000] {cassandra.py:128} WARNING - Downgrading core protocol version from 65 to 5 for 172.21.0.4:9042. To avoid this, it is best practice to explicitly set Cluster(protocol_version) to the version supported by your cluster. http://datastax.github.io/python-driver/api/cassandra/cluster.html#cassandra.cluster.Cluster.protocol_version
+[2024-04-08T15:01:10.181+0000] {record.py:71} INFO - Sensor check existence of record: ['user_id', 'age', 'email', 'name']
+[2024-04-08T15:01:10.425+0000] {base.py:83} INFO - Using connection ID 'cassandra_conn' for task execution.
+[2024-04-08T15:01:10.564+0000] {cassandra.py:128} WARNING - Downgrading core protocol version from 66 to 65 for 172.21.0.4:9042. To avoid this, it is best practice to explicitly set Cluster(protocol_version) to the version supported by your cluster. http://datastax.github.io/python-driver/api/cassandra/cluster.html#cassandra.cluster.Cluster.protocol_version
+[2024-04-08T15:01:10.742+0000] {cassandra.py:128} WARNING - Downgrading core protocol version from 65 to 5 for 172.21.0.4:9042. To avoid this, it is best practice to explicitly set Cluster(protocol_version) to the version supported by your cluster. http://datastax.github.io/python-driver/api/cassandra/cluster.html#cassandra.cluster.Cluster.protocol_version
+[2024-04-08T15:02:11.520+0000] {record.py:71} INFO - Sensor check existence of record: ['user_id', 'age', 'email', 'name']
+[2024-04-08T15:02:11.917+0000] {base.py:83} INFO - Using connection ID 'cassandra_conn' for task execution.
+[2024-04-08T15:02:12.027+0000] {cassandra.py:128} WARNING - Downgrading core protocol version from 66 to 65 for 172.21.0.4:9042. To avoid this, it is best practice to explicitly set Cluster(protocol_version) to the version supported by your cluster. http://datastax.github.io/python-driver/api/cassandra/cluster.html#cassandra.cluster.Cluster.protocol_version
+[2024-04-08T15:02:12.068+0000] {cassandra.py:128} WARNING - Downgrading core protocol version from 65 to 5 for 172.21.0.4:9042. To avoid this, it is best practice to explicitly set Cluster(protocol_version) to the version supported by your cluster. http://datastax.github.io/python-driver/api/cassandra/cluster.html#cassandra.cluster.Cluster.protocol_version
+[2024-04-08T15:02:48.384+0000] {local_task_job_runner.py:302} WARNING - State of this instance has been externally set to None. Terminating instance.
+[2024-04-08T15:02:48.395+0000] {process_utils.py:131} INFO - Sending 15 to group 1089. PIDs of all processes in the group: [1089]
+[2024-04-08T15:02:48.398+0000] {process_utils.py:86} INFO - Sending the signal 15 to group 1089
+[2024-04-08T15:02:48.401+0000] {taskinstance.py:2483} ERROR - Received SIGTERM. Terminating subprocesses.
+[2024-04-08T15:02:48.457+0000] {taskinstance.py:2731} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/taskinstance.py", line 444, in _execute_task
+    result = _execute_callable(context=context, **execute_callable_kwargs)
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/taskinstance.py", line 414, in _execute_callable
+    return execute_callable(context=context, **execute_callable_kwargs)
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/sensors/base.py", line 293, in execute
+    time.sleep(self._get_next_poke_interval(started_at, run_duration, try_number))
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/taskinstance.py", line 2485, in signal_handler
+    raise AirflowException("Task received SIGTERM signal")
+airflow.exceptions.AirflowException: Task received SIGTERM signal
+[2024-04-08T15:02:48.517+0000] {taskinstance.py:1149} INFO - Marking task as FAILED. dag_id=cassandra_sensor_dag, task_id=cassandra_sensor_record, execution_date=20240408T012500, start_date=20240408T145806, end_date=20240408T150248
+[2024-04-08T15:02:48.685+0000] {standard_task_runner.py:107} ERROR - Failed to execute job 106 for task cassandra_sensor_record ((psycopg2.errors.ForeignKeyViolation) insert or update on table "task_fail" violates foreign key constraint "task_fail_ti_fkey"
+DETAIL:  Key (dag_id, task_id, run_id, map_index)=(cassandra_sensor_dag, cassandra_sensor_record, scheduled__2024-04-08T01:25:00+00:00, -1) is not present in table "task_instance".
+
+[SQL: INSERT INTO task_fail (task_id, dag_id, run_id, map_index, start_date, end_date, duration) VALUES (%(task_id)s, %(dag_id)s, %(run_id)s, %(map_index)s, %(start_date)s, %(end_date)s, %(duration)s) RETURNING task_fail.id]
+[parameters: {'task_id': 'cassandra_sensor_record', 'dag_id': 'cassandra_sensor_dag', 'run_id': 'scheduled__2024-04-08T01:25:00+00:00', 'map_index': -1, 'start_date': datetime.datetime(2024, 4, 8, 14, 58, 6, 208963, tzinfo=Timezone('UTC')), 'end_date': datetime.datetime(2024, 4, 8, 15, 2, 48, 514277, tzinfo=Timezone('UTC')), 'duration': 282}]
+(Background on this error at: https://sqlalche.me/e/14/gkpj); 1089)
+[2024-04-08T15:02:48.784+0000] {process_utils.py:79} INFO - Process psutil.Process(pid=1089, status='terminated', exitcode=1, started='14:58:06') (1089) terminated with exit code 1
+[2024-04-08T15:17:01.624+0000] {taskinstance.py:1979} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: cassandra_sensor_dag.cassandra_sensor_record scheduled__2024-04-08T01:25:00+00:00 [queued]>
+[2024-04-08T15:17:01.871+0000] {taskinstance.py:1979} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: cassandra_sensor_dag.cassandra_sensor_record scheduled__2024-04-08T01:25:00+00:00 [queued]>
+[2024-04-08T15:17:01.879+0000] {taskinstance.py:2193} INFO - Starting attempt 1 of 2
+[2024-04-08T15:17:02.420+0000] {taskinstance.py:2217} INFO - Executing <Task(CassandraRecordSensor): cassandra_sensor_record> on 2024-04-08 01:25:00+00:00
+[2024-04-08T15:17:02.680+0000] {standard_task_runner.py:60} INFO - Started process 2390 to run task
+[2024-04-08T15:17:02.810+0000] {standard_task_runner.py:87} INFO - Running: ['***', 'tasks', 'run', 'cassandra_sensor_dag', 'cassandra_sensor_record', 'scheduled__2024-04-08T01:25:00+00:00', '--job-id', '162', '--raw', '--subdir', 'DAGS_FOLDER/test.py', '--cfg-path', '/tmp/tmpy1y0bpz8']
+[2024-04-08T15:17:02.852+0000] {standard_task_runner.py:88} INFO - Job 162: Subtask cassandra_sensor_record
+[2024-04-08T15:17:04.078+0000] {task_command.py:423} INFO - Running <TaskInstance: cassandra_sensor_dag.cassandra_sensor_record scheduled__2024-04-08T01:25:00+00:00 [running]> on host c2d2cc8ff432
+[2024-04-08T15:17:06.604+0000] {taskinstance.py:2513} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='cassandra_sensor_dag' AIRFLOW_CTX_TASK_ID='cassandra_sensor_record' AIRFLOW_CTX_EXECUTION_DATE='2024-04-08T01:25:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2024-04-08T01:25:00+00:00'
+[2024-04-08T15:17:06.627+0000] {record.py:71} INFO - Sensor check existence of record: ['user_id']
+[2024-04-08T15:17:06.817+0000] {base.py:83} INFO - Using connection ID 'cassandra_conn' for task execution.
+[2024-04-08T15:17:06.879+0000] {warnings.py:109} WARNING - /home/***/.local/lib/python3.8/site-packages/***/providers/apache/cassandra/hooks/cassandra.py:120: DeprecationWarning: Legacy execution parameters will be removed in 4.0. Consider using execution profiles.
+  self.cluster = Cluster(**conn_config)
+
+[2024-04-08T15:17:06.942+0000] {cassandra.py:128} WARNING - Downgrading core protocol version from 66 to 65 for 172.21.0.4:9042. To avoid this, it is best practice to explicitly set Cluster(protocol_version) to the version supported by your cluster. http://datastax.github.io/python-driver/api/cassandra/cluster.html#cassandra.cluster.Cluster.protocol_version
+[2024-04-08T15:17:06.990+0000] {cassandra.py:128} WARNING - Downgrading core protocol version from 65 to 5 for 172.21.0.4:9042. To avoid this, it is best practice to explicitly set Cluster(protocol_version) to the version supported by your cluster. http://datastax.github.io/python-driver/api/cassandra/cluster.html#cassandra.cluster.Cluster.protocol_version
+[2024-04-08T15:17:33.945+0000] {job.py:213} ERROR - Job heartbeat got an exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/sqlalchemy/engine/base.py", line 3371, in _wrap_pool_connect
+    return fn()
+  File "/home/airflow/.local/lib/python3.8/site-packages/sqlalchemy/pool/base.py", line 327, in connect
+    return _ConnectionFairy._checkout(self)
+  File "/home/airflow/.local/lib/python3.8/site-packages/sqlalchemy/pool/base.py", line 894, in _checkout
+    fairy = _ConnectionRecord.checkout(pool)
+  File "/home/airflow/.local/lib/python3.8/site-packages/sqlalchemy/pool/base.py", line 493, in checkout
+    rec = pool._do_get()
+  File "/home/airflow/.local/lib/python3.8/site-packages/sqlalchemy/pool/impl.py", line 256, in _do_get
+    return self._create_connection()
+  File "/home/airflow/.local/lib/python3.8/site-packages/sqlalchemy/pool/base.py", line 273, in _create_connection
+    return _ConnectionRecord(self)
+  File "/home/airflow/.local/lib/python3.8/site-packages/sqlalchemy/pool/base.py", line 388, in __init__
+    self.__connect()
+  File "/home/airflow/.local/lib/python3.8/site-packages/sqlalchemy/pool/base.py", line 691, in __connect
+    pool.logger.debug("Error on connect(): %s", e)
+  File "/home/airflow/.local/lib/python3.8/site-packages/sqlalchemy/util/langhelpers.py", line 70, in __exit__
+    compat.raise_(
+  File "/home/airflow/.local/lib/python3.8/site-packages/sqlalchemy/util/compat.py", line 211, in raise_
+    raise exception
+  File "/home/airflow/.local/lib/python3.8/site-packages/sqlalchemy/pool/base.py", line 686, in __connect
+    self.dbapi_connection = connection = pool._invoke_creator(self)
+  File "/home/airflow/.local/lib/python3.8/site-packages/sqlalchemy/engine/create.py", line 574, in connect
+    return dialect.connect(*cargs, **cparams)
+  File "/home/airflow/.local/lib/python3.8/site-packages/sqlalchemy/engine/default.py", line 598, in connect
+    return self.dbapi.connect(*cargs, **cparams)
+  File "/home/airflow/.local/lib/python3.8/site-packages/psycopg2/__init__.py", line 122, in connect
+    conn = _connect(dsn, connection_factory=connection_factory, **kwasync)
+psycopg2.OperationalError: could not translate host name "postgres" to address: Temporary failure in name resolution
+
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/jobs/job.py", line 187, in heartbeat
+    self._merge_from(Job._fetch_from_db(self, session))
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/api_internal/internal_api_call.py", line 114, in wrapper
+    return func(*args, **kwargs)
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/utils/session.py", line 76, in wrapper
+    return func(*args, **kwargs)
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/jobs/job.py", line 310, in _fetch_from_db
+    session.merge(job)
+  File "/home/airflow/.local/lib/python3.8/site-packages/sqlalchemy/orm/session.py", line 3056, in merge
+    return self._merge(
+  File "/home/airflow/.local/lib/python3.8/site-packages/sqlalchemy/orm/session.py", line 3136, in _merge
+    merged = self.get(
+  File "/home/airflow/.local/lib/python3.8/site-packages/sqlalchemy/orm/session.py", line 2853, in get
+    return self._get_impl(
+  File "/home/airflow/.local/lib/python3.8/site-packages/sqlalchemy/orm/session.py", line 2975, in _get_impl
+    return db_load_fn(
+  File "/home/airflow/.local/lib/python3.8/site-packages/sqlalchemy/orm/loading.py", line 530, in load_on_pk_identity
+    session.execute(
+  File "/home/airflow/.local/lib/python3.8/site-packages/sqlalchemy/orm/session.py", line 1716, in execute
+    conn = self._connection_for_bind(bind)
+  File "/home/airflow/.local/lib/python3.8/site-packages/sqlalchemy/orm/session.py", line 1555, in _connection_for_bind
+    return self._transaction._connection_for_bind(
+  File "/home/airflow/.local/lib/python3.8/site-packages/sqlalchemy/orm/session.py", line 750, in _connection_for_bind
+    conn = bind.connect()
+  File "/home/airflow/.local/lib/python3.8/site-packages/sqlalchemy/future/engine.py", line 412, in connect
+    return super(Engine, self).connect()
+  File "/home/airflow/.local/lib/python3.8/site-packages/sqlalchemy/engine/base.py", line 3325, in connect
+    return self._connection_cls(self, close_with_result=close_with_result)
+  File "/home/airflow/.local/lib/python3.8/site-packages/sqlalchemy/engine/base.py", line 96, in __init__
+    else engine.raw_connection()
+  File "/home/airflow/.local/lib/python3.8/site-packages/sqlalchemy/engine/base.py", line 3404, in raw_connection
+    return self._wrap_pool_connect(self.pool.connect, _connection)
+  File "/home/airflow/.local/lib/python3.8/site-packages/sqlalchemy/engine/base.py", line 3374, in _wrap_pool_connect
+    Connection._handle_dbapi_exception_noconnection(
+  File "/home/airflow/.local/lib/python3.8/site-packages/sqlalchemy/engine/base.py", line 2208, in _handle_dbapi_exception_noconnection
+    util.raise_(
+  File "/home/airflow/.local/lib/python3.8/site-packages/sqlalchemy/util/compat.py", line 211, in raise_
+    raise exception
+  File "/home/airflow/.local/lib/python3.8/site-packages/sqlalchemy/engine/base.py", line 3371, in _wrap_pool_connect
+    return fn()
+  File "/home/airflow/.local/lib/python3.8/site-packages/sqlalchemy/pool/base.py", line 327, in connect
+    return _ConnectionFairy._checkout(self)
+  File "/home/airflow/.local/lib/python3.8/site-packages/sqlalchemy/pool/base.py", line 894, in _checkout
+    fairy = _ConnectionRecord.checkout(pool)
+  File "/home/airflow/.local/lib/python3.8/site-packages/sqlalchemy/pool/base.py", line 493, in checkout
+    rec = pool._do_get()
+  File "/home/airflow/.local/lib/python3.8/site-packages/sqlalchemy/pool/impl.py", line 256, in _do_get
+    return self._create_connection()
+  File "/home/airflow/.local/lib/python3.8/site-packages/sqlalchemy/pool/base.py", line 273, in _create_connection
+    return _ConnectionRecord(self)
+  File "/home/airflow/.local/lib/python3.8/site-packages/sqlalchemy/pool/base.py", line 388, in __init__
+    self.__connect()
+  File "/home/airflow/.local/lib/python3.8/site-packages/sqlalchemy/pool/base.py", line 691, in __connect
+    pool.logger.debug("Error on connect(): %s", e)
+  File "/home/airflow/.local/lib/python3.8/site-packages/sqlalchemy/util/langhelpers.py", line 70, in __exit__
+    compat.raise_(
+  File "/home/airflow/.local/lib/python3.8/site-packages/sqlalchemy/util/compat.py", line 211, in raise_
+    raise exception
+  File "/home/airflow/.local/lib/python3.8/site-packages/sqlalchemy/pool/base.py", line 686, in __connect
+    self.dbapi_connection = connection = pool._invoke_creator(self)
+  File "/home/airflow/.local/lib/python3.8/site-packages/sqlalchemy/engine/create.py", line 574, in connect
+    return dialect.connect(*cargs, **cparams)
+  File "/home/airflow/.local/lib/python3.8/site-packages/sqlalchemy/engine/default.py", line 598, in connect
+    return self.dbapi.connect(*cargs, **cparams)
+  File "/home/airflow/.local/lib/python3.8/site-packages/psycopg2/__init__.py", line 122, in connect
+    conn = _connect(dsn, connection_factory=connection_factory, **kwasync)
+sqlalchemy.exc.OperationalError: (psycopg2.OperationalError) could not translate host name "postgres" to address: Temporary failure in name resolution
+
+(Background on this error at: https://sqlalche.me/e/14/e3q8)
+[2024-04-08T15:17:36.244+0000] {job.py:221} ERROR - Job heartbeat failed with error. Scheduler is in unhealthy state
+[2024-04-08T15:20:09.512+0000] {job.py:221} ERROR - Job heartbeat failed with error. Scheduler is in unhealthy state
+[2024-04-08T15:18:09.412+0000] {record.py:71} INFO - Sensor check existence of record: ['user_id']
+[2024-04-08T15:20:38.388+0000] {threading.py:932} WARNING - Heartbeat failed for connection (140560711114080) to 172.21.0.4:9042
+[2024-04-08T15:20:38.434+0000] {thread.py:57} WARNING - [control connection] Error connecting to 172.21.0.4:9042:
+Traceback (most recent call last):
+  File "cassandra/cluster.py", line 3577, in cassandra.cluster.ControlConnection._reconnect_internal
+  File "cassandra/cluster.py", line 3599, in cassandra.cluster.ControlConnection._try_connect
+  File "cassandra/cluster.py", line 1670, in cassandra.cluster.Cluster.connection_factory
+  File "cassandra/connection.py", line 846, in cassandra.connection.Connection.factory
+  File "/home/airflow/.local/lib/python3.8/site-packages/cassandra/io/libevreactor.py", line 266, in __init__
+    self._connect_socket()
+  File "cassandra/connection.py", line 951, in cassandra.connection.Connection._connect_socket
+ConnectionRefusedError: [Errno 111] Tried connecting to [('172.21.0.4', 9042)]. Last error: Connection refused
+[2024-04-08T15:20:39.549+0000] {thread.py:57} WARNING - [control connection] Error connecting to 172.21.0.4:9042:
+Traceback (most recent call last):
+  File "cassandra/cluster.py", line 3577, in cassandra.cluster.ControlConnection._reconnect_internal
+  File "cassandra/cluster.py", line 3599, in cassandra.cluster.ControlConnection._try_connect
+  File "cassandra/cluster.py", line 1670, in cassandra.cluster.Cluster.connection_factory
+  File "cassandra/connection.py", line 846, in cassandra.connection.Connection.factory
+  File "/home/airflow/.local/lib/python3.8/site-packages/cassandra/io/libevreactor.py", line 266, in __init__
+    self._connect_socket()
+  File "cassandra/connection.py", line 951, in cassandra.connection.Connection._connect_socket
+ConnectionRefusedError: [Errno 111] Tried connecting to [('172.21.0.4', 9042)]. Last error: Connection refused
+[2024-04-08T15:20:39.608+0000] {base.py:83} INFO - Using connection ID 'cassandra_conn' for task execution.
+[2024-04-08T15:20:39.660+0000] {cassandra.py:128} WARNING - [control connection] Error connecting to 172.21.0.4:9042:
+Traceback (most recent call last):
+  File "cassandra/cluster.py", line 3577, in cassandra.cluster.ControlConnection._reconnect_internal
+  File "cassandra/cluster.py", line 3599, in cassandra.cluster.ControlConnection._try_connect
+  File "cassandra/cluster.py", line 1670, in cassandra.cluster.Cluster.connection_factory
+  File "cassandra/connection.py", line 846, in cassandra.connection.Connection.factory
+  File "/home/airflow/.local/lib/python3.8/site-packages/cassandra/io/libevreactor.py", line 266, in __init__
+    self._connect_socket()
+  File "cassandra/connection.py", line 951, in cassandra.connection.Connection._connect_socket
+ConnectionRefusedError: [Errno 111] Tried connecting to [('172.21.0.4', 9042)]. Last error: Connection refused
+[2024-04-08T15:20:39.661+0000] {cassandra.py:128} ERROR - Control connection failed to connect, shutting down Cluster:
+Traceback (most recent call last):
+  File "cassandra/cluster.py", line 1740, in cassandra.cluster.Cluster.connect
+  File "cassandra/cluster.py", line 3543, in cassandra.cluster.ControlConnection.connect
+  File "cassandra/cluster.py", line 3588, in cassandra.cluster.ControlConnection._reconnect_internal
+cassandra.cluster.NoHostAvailable: ('Unable to connect to any servers', {'172.21.0.4:9042': ConnectionRefusedError(111, "Tried connecting to [('172.21.0.4', 9042)]. Last error: Connection refused")})
+[2024-04-08T15:20:46.716+0000] {thread.py:57} WARNING - [control connection] Error connecting to 172.21.0.4:9042:
+Traceback (most recent call last):
+  File "cassandra/cluster.py", line 3577, in cassandra.cluster.ControlConnection._reconnect_internal
+  File "cassandra/cluster.py", line 3599, in cassandra.cluster.ControlConnection._try_connect
+  File "cassandra/cluster.py", line 1670, in cassandra.cluster.Cluster.connection_factory
+  File "cassandra/connection.py", line 846, in cassandra.connection.Connection.factory
+  File "/home/airflow/.local/lib/python3.8/site-packages/cassandra/io/libevreactor.py", line 266, in __init__
+    self._connect_socket()
+  File "cassandra/connection.py", line 951, in cassandra.connection.Connection._connect_socket
+OSError: [Errno None] Tried connecting to [('172.21.0.4', 9042)]. Last error: timed out
+[2024-04-08T15:20:53.342+0000] {thread.py:57} WARNING - [control connection] Error connecting to 172.21.0.4:9042:
+Traceback (most recent call last):
+  File "cassandra/cluster.py", line 3577, in cassandra.cluster.ControlConnection._reconnect_internal
+  File "cassandra/cluster.py", line 3599, in cassandra.cluster.ControlConnection._try_connect
+  File "cassandra/cluster.py", line 1670, in cassandra.cluster.Cluster.connection_factory
+  File "cassandra/connection.py", line 846, in cassandra.connection.Connection.factory
+  File "/home/airflow/.local/lib/python3.8/site-packages/cassandra/io/libevreactor.py", line 266, in __init__
+    self._connect_socket()
+  File "cassandra/connection.py", line 951, in cassandra.connection.Connection._connect_socket
+OSError: [Errno 113] Tried connecting to [('172.21.0.4', 9042)]. Last error: No route to host
+[2024-04-08T15:21:02.202+0000] {thread.py:57} WARNING - [control connection] Error connecting to 172.21.0.4:9042:
+Traceback (most recent call last):
+  File "cassandra/cluster.py", line 3577, in cassandra.cluster.ControlConnection._reconnect_internal
+  File "cassandra/cluster.py", line 3599, in cassandra.cluster.ControlConnection._try_connect
+  File "cassandra/cluster.py", line 1670, in cassandra.cluster.Cluster.connection_factory
+  File "cassandra/connection.py", line 846, in cassandra.connection.Connection.factory
+  File "/home/airflow/.local/lib/python3.8/site-packages/cassandra/io/libevreactor.py", line 266, in __init__
+    self._connect_socket()
+  File "cassandra/connection.py", line 951, in cassandra.connection.Connection._connect_socket
+ConnectionRefusedError: [Errno 111] Tried connecting to [('172.21.0.4', 9042)]. Last error: Connection refused
+[2024-04-08T15:21:08.378+0000] {thread.py:57} WARNING - [control connection] Error connecting to 172.21.0.4:9042:
+Traceback (most recent call last):
+  File "cassandra/cluster.py", line 3577, in cassandra.cluster.ControlConnection._reconnect_internal
+  File "cassandra/cluster.py", line 3599, in cassandra.cluster.ControlConnection._try_connect
+  File "cassandra/cluster.py", line 1670, in cassandra.cluster.Cluster.connection_factory
+  File "cassandra/connection.py", line 846, in cassandra.connection.Connection.factory
+  File "/home/airflow/.local/lib/python3.8/site-packages/cassandra/io/libevreactor.py", line 266, in __init__
+    self._connect_socket()
+  File "cassandra/connection.py", line 951, in cassandra.connection.Connection._connect_socket
+ConnectionRefusedError: [Errno 111] Tried connecting to [('172.21.0.4', 9042)]. Last error: Connection refused
+[2024-04-08T15:21:09.405+0000] {thread.py:57} WARNING - [control connection] Error connecting to 172.21.0.4:9042:
+Traceback (most recent call last):
+  File "cassandra/cluster.py", line 3577, in cassandra.cluster.ControlConnection._reconnect_internal
+  File "cassandra/cluster.py", line 3599, in cassandra.cluster.ControlConnection._try_connect
+  File "cassandra/cluster.py", line 1670, in cassandra.cluster.Cluster.connection_factory
+  File "cassandra/connection.py", line 846, in cassandra.connection.Connection.factory
+  File "/home/airflow/.local/lib/python3.8/site-packages/cassandra/io/libevreactor.py", line 266, in __init__
+    self._connect_socket()
+  File "cassandra/connection.py", line 951, in cassandra.connection.Connection._connect_socket
+ConnectionRefusedError: [Errno 111] Tried connecting to [('172.21.0.4', 9042)]. Last error: Connection refused
+[2024-04-08T15:21:11.411+0000] {thread.py:57} WARNING - [control connection] Error connecting to 172.21.0.4:9042:
+Traceback (most recent call last):
+  File "cassandra/cluster.py", line 3577, in cassandra.cluster.ControlConnection._reconnect_internal
+  File "cassandra/cluster.py", line 3599, in cassandra.cluster.ControlConnection._try_connect
+  File "cassandra/cluster.py", line 1670, in cassandra.cluster.Cluster.connection_factory
+  File "cassandra/connection.py", line 846, in cassandra.connection.Connection.factory
+  File "/home/airflow/.local/lib/python3.8/site-packages/cassandra/io/libevreactor.py", line 266, in __init__
+    self._connect_socket()
+  File "cassandra/connection.py", line 951, in cassandra.connection.Connection._connect_socket
+ConnectionRefusedError: [Errno 111] Tried connecting to [('172.21.0.4', 9042)]. Last error: Connection refused
+[2024-04-08T15:21:15.324+0000] {thread.py:57} WARNING - [control connection] Error connecting to 172.21.0.4:9042:
+Traceback (most recent call last):
+  File "cassandra/cluster.py", line 3577, in cassandra.cluster.ControlConnection._reconnect_internal
+  File "cassandra/cluster.py", line 3599, in cassandra.cluster.ControlConnection._try_connect
+  File "cassandra/cluster.py", line 1670, in cassandra.cluster.Cluster.connection_factory
+  File "cassandra/connection.py", line 846, in cassandra.connection.Connection.factory
+  File "/home/airflow/.local/lib/python3.8/site-packages/cassandra/io/libevreactor.py", line 266, in __init__
+    self._connect_socket()
+  File "cassandra/connection.py", line 951, in cassandra.connection.Connection._connect_socket
+ConnectionRefusedError: [Errno 111] Tried connecting to [('172.21.0.4', 9042)]. Last error: Connection refused
+[2024-04-08T15:21:22.849+0000] {thread.py:57} WARNING - [control connection] Error connecting to 172.21.0.4:9042:
+Traceback (most recent call last):
+  File "cassandra/cluster.py", line 3577, in cassandra.cluster.ControlConnection._reconnect_internal
+  File "cassandra/cluster.py", line 3599, in cassandra.cluster.ControlConnection._try_connect
+  File "cassandra/cluster.py", line 1670, in cassandra.cluster.Cluster.connection_factory
+  File "cassandra/connection.py", line 846, in cassandra.connection.Connection.factory
+  File "/home/airflow/.local/lib/python3.8/site-packages/cassandra/io/libevreactor.py", line 266, in __init__
+    self._connect_socket()
+  File "cassandra/connection.py", line 951, in cassandra.connection.Connection._connect_socket
+ConnectionRefusedError: [Errno 111] Tried connecting to [('172.21.0.4', 9042)]. Last error: Connection refused
+[2024-04-08T15:21:39.735+0000] {record.py:71} INFO - Sensor check existence of record: ['user_id']
+[2024-04-08T15:21:39.750+0000] {base.py:83} INFO - Using connection ID 'cassandra_conn' for task execution.
+[2024-04-08T15:21:39.758+0000] {cassandra.py:128} WARNING - Downgrading core protocol version from 66 to 65 for 172.21.0.4:9042. To avoid this, it is best practice to explicitly set Cluster(protocol_version) to the version supported by your cluster. http://datastax.github.io/python-driver/api/cassandra/cluster.html#cassandra.cluster.Cluster.protocol_version
+[2024-04-08T15:21:39.762+0000] {cassandra.py:128} WARNING - Downgrading core protocol version from 65 to 5 for 172.21.0.4:9042. To avoid this, it is best practice to explicitly set Cluster(protocol_version) to the version supported by your cluster. http://datastax.github.io/python-driver/api/cassandra/cluster.html#cassandra.cluster.Cluster.protocol_version
+[2024-04-08T15:22:40.007+0000] {record.py:71} INFO - Sensor check existence of record: ['user_id']
+[2024-04-08T15:22:40.020+0000] {base.py:83} INFO - Using connection ID 'cassandra_conn' for task execution.
+[2024-04-08T15:22:40.026+0000] {cassandra.py:128} WARNING - Downgrading core protocol version from 66 to 65 for 172.21.0.4:9042. To avoid this, it is best practice to explicitly set Cluster(protocol_version) to the version supported by your cluster. http://datastax.github.io/python-driver/api/cassandra/cluster.html#cassandra.cluster.Cluster.protocol_version
+[2024-04-08T15:22:40.029+0000] {cassandra.py:128} WARNING - Downgrading core protocol version from 65 to 5 for 172.21.0.4:9042. To avoid this, it is best practice to explicitly set Cluster(protocol_version) to the version supported by your cluster. http://datastax.github.io/python-driver/api/cassandra/cluster.html#cassandra.cluster.Cluster.protocol_version
+[2024-04-08T15:23:40.182+0000] {record.py:71} INFO - Sensor check existence of record: ['user_id']
+[2024-04-08T15:23:40.191+0000] {base.py:83} INFO - Using connection ID 'cassandra_conn' for task execution.
+[2024-04-08T15:23:40.196+0000] {cassandra.py:128} WARNING - Downgrading core protocol version from 66 to 65 for 172.21.0.4:9042. To avoid this, it is best practice to explicitly set Cluster(protocol_version) to the version supported by your cluster. http://datastax.github.io/python-driver/api/cassandra/cluster.html#cassandra.cluster.Cluster.protocol_version
+[2024-04-08T15:23:40.198+0000] {cassandra.py:128} WARNING - Downgrading core protocol version from 65 to 5 for 172.21.0.4:9042. To avoid this, it is best practice to explicitly set Cluster(protocol_version) to the version supported by your cluster. http://datastax.github.io/python-driver/api/cassandra/cluster.html#cassandra.cluster.Cluster.protocol_version
+[2024-04-08T15:24:40.311+0000] {record.py:71} INFO - Sensor check existence of record: ['user_id']
+[2024-04-08T15:24:40.321+0000] {base.py:83} INFO - Using connection ID 'cassandra_conn' for task execution.
+[2024-04-08T15:24:40.324+0000] {cassandra.py:128} WARNING - Downgrading core protocol version from 66 to 65 for 172.21.0.4:9042. To avoid this, it is best practice to explicitly set Cluster(protocol_version) to the version supported by your cluster. http://datastax.github.io/python-driver/api/cassandra/cluster.html#cassandra.cluster.Cluster.protocol_version
+[2024-04-08T15:24:40.327+0000] {cassandra.py:128} WARNING - Downgrading core protocol version from 65 to 5 for 172.21.0.4:9042. To avoid this, it is best practice to explicitly set Cluster(protocol_version) to the version supported by your cluster. http://datastax.github.io/python-driver/api/cassandra/cluster.html#cassandra.cluster.Cluster.protocol_version
+[2024-04-08T15:25:15.735+0000] {thread.py:57} WARNING - Host 172.21.0.4:9042 has been marked down
+[2024-04-08T15:25:15.820+0000] {thread.py:57} WARNING - Host 172.21.0.4:9042 has been marked down
+[2024-04-08T15:25:15.831+0000] {thread.py:57} WARNING - Host 172.21.0.4:9042 has been marked down
+[2024-04-08T15:25:15.831+0000] {thread.py:57} WARNING - Host 172.21.0.4:9042 has been marked down
+[2024-04-08T15:25:15.843+0000] {thread.py:57} WARNING - Host 172.21.0.4:9042 has been marked down
+[2024-04-08T15:25:16.871+0000] {thread.py:57} WARNING - Error attempting to reconnect to 172.21.0.4:9042, scheduling retry in 1.88 seconds: [Errno 111] Tried connecting to [('172.21.0.4', 9042)]. Last error: Connection refused
+[2024-04-08T15:25:16.903+0000] {thread.py:57} WARNING - Error attempting to reconnect to 172.21.0.4:9042, scheduling retry in 2.26 seconds: [Errno 111] Tried connecting to [('172.21.0.4', 9042)]. Last error: Connection refused
+[2024-04-08T15:25:16.924+0000] {thread.py:57} WARNING - Error attempting to reconnect to 172.21.0.4:9042, scheduling retry in 2.3 seconds: [Errno 111] Tried connecting to [('172.21.0.4', 9042)]. Last error: Connection refused
+[2024-04-08T15:25:17.090+0000] {thread.py:57} WARNING - Error attempting to reconnect to 172.21.0.4:9042, scheduling retry in 2.08 seconds: [Errno 111] Tried connecting to [('172.21.0.4', 9042)]. Last error: Connection refused
+[2024-04-08T15:25:17.096+0000] {thread.py:57} WARNING - Error attempting to reconnect to 172.21.0.4:9042, scheduling retry in 2.26 seconds: [Errno 111] Tried connecting to [('172.21.0.4', 9042)]. Last error: Connection refused
+[2024-04-08T15:25:18.780+0000] {thread.py:57} WARNING - Error attempting to reconnect to 172.21.0.4:9042, scheduling retry in 4.28 seconds: [Errno 111] Tried connecting to [('172.21.0.4', 9042)]. Last error: Connection refused
+[2024-04-08T15:25:19.200+0000] {thread.py:57} WARNING - Error attempting to reconnect to 172.21.0.4:9042, scheduling retry in 4.16 seconds: [Errno 111] Tried connecting to [('172.21.0.4', 9042)]. Last error: Connection refused
+[2024-04-08T15:25:19.215+0000] {thread.py:57} WARNING - Error attempting to reconnect to 172.21.0.4:9042, scheduling retry in 4.16 seconds: [Errno 111] Tried connecting to [('172.21.0.4', 9042)]. Last error: Connection refused
+[2024-04-08T15:25:19.237+0000] {thread.py:57} WARNING - Error attempting to reconnect to 172.21.0.4:9042, scheduling retry in 3.96 seconds: [Errno 111] Tried connecting to [('172.21.0.4', 9042)]. Last error: Connection refused
+[2024-04-08T15:25:19.408+0000] {thread.py:57} WARNING - Error attempting to reconnect to 172.21.0.4:9042, scheduling retry in 4.48 seconds: [Errno 111] Tried connecting to [('172.21.0.4', 9042)]. Last error: Connection refused

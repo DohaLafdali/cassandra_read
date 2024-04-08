@@ -1,0 +1,32 @@
+[2024-04-08T14:53:54.477+0000] {taskinstance.py:1979} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: cassandra_sensor_dag.cassandra_sensor scheduled__2024-04-08T00:10:00+00:00 [queued]>
+[2024-04-08T14:53:54.637+0000] {taskinstance.py:1979} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: cassandra_sensor_dag.cassandra_sensor scheduled__2024-04-08T00:10:00+00:00 [queued]>
+[2024-04-08T14:53:54.645+0000] {taskinstance.py:2193} INFO - Starting attempt 2 of 2
+[2024-04-08T14:53:55.874+0000] {taskinstance.py:2217} INFO - Executing <Task(CassandraTableSensor): cassandra_sensor> on 2024-04-08 00:10:00+00:00
+[2024-04-08T14:53:56.224+0000] {standard_task_runner.py:60} INFO - Started process 707 to run task
+[2024-04-08T14:53:56.318+0000] {standard_task_runner.py:87} INFO - Running: ['***', 'tasks', 'run', 'cassandra_sensor_dag', 'cassandra_sensor', 'scheduled__2024-04-08T00:10:00+00:00', '--job-id', '81', '--raw', '--subdir', 'DAGS_FOLDER/test.py', '--cfg-path', '/tmp/tmp_y1q3bnn']
+[2024-04-08T14:53:56.338+0000] {standard_task_runner.py:88} INFO - Job 81: Subtask cassandra_sensor
+[2024-04-08T14:53:57.115+0000] {task_command.py:423} INFO - Running <TaskInstance: cassandra_sensor_dag.cassandra_sensor scheduled__2024-04-08T00:10:00+00:00 [running]> on host c2d2cc8ff432
+[2024-04-08T14:53:58.010+0000] {taskinstance.py:2513} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='cassandra_sensor_dag' AIRFLOW_CTX_TASK_ID='cassandra_sensor' AIRFLOW_CTX_EXECUTION_DATE='2024-04-08T00:10:00+00:00' AIRFLOW_CTX_TRY_NUMBER='2' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2024-04-08T00:10:00+00:00'
+[2024-04-08T14:53:58.024+0000] {table.py:65} INFO - Sensor check existence of table: users
+[2024-04-08T14:53:58.095+0000] {base.py:83} INFO - Using connection ID 'cassandra_conn' for task execution.
+[2024-04-08T14:53:58.108+0000] {warnings.py:109} WARNING - /home/***/.local/lib/python3.8/site-packages/***/providers/apache/cassandra/hooks/cassandra.py:120: DeprecationWarning: Legacy execution parameters will be removed in 4.0. Consider using execution profiles.
+  self.cluster = Cluster(**conn_config)
+
+[2024-04-08T14:53:58.144+0000] {cassandra.py:128} WARNING - Downgrading core protocol version from 66 to 65 for 172.21.0.4:9042. To avoid this, it is best practice to explicitly set Cluster(protocol_version) to the version supported by your cluster. http://datastax.github.io/python-driver/api/cassandra/cluster.html#cassandra.cluster.Cluster.protocol_version
+[2024-04-08T14:53:58.177+0000] {cassandra.py:128} WARNING - Downgrading core protocol version from 65 to 5 for 172.21.0.4:9042. To avoid this, it is best practice to explicitly set Cluster(protocol_version) to the version supported by your cluster. http://datastax.github.io/python-driver/api/cassandra/cluster.html#cassandra.cluster.Cluster.protocol_version
+[2024-04-08T14:54:58.673+0000] {table.py:65} INFO - Sensor check existence of table: users
+[2024-04-08T14:54:58.684+0000] {base.py:83} INFO - Using connection ID 'cassandra_conn' for task execution.
+[2024-04-08T14:54:58.688+0000] {cassandra.py:128} WARNING - Downgrading core protocol version from 66 to 65 for 172.21.0.4:9042. To avoid this, it is best practice to explicitly set Cluster(protocol_version) to the version supported by your cluster. http://datastax.github.io/python-driver/api/cassandra/cluster.html#cassandra.cluster.Cluster.protocol_version
+[2024-04-08T14:54:58.691+0000] {cassandra.py:128} WARNING - Downgrading core protocol version from 65 to 5 for 172.21.0.4:9042. To avoid this, it is best practice to explicitly set Cluster(protocol_version) to the version supported by your cluster. http://datastax.github.io/python-driver/api/cassandra/cluster.html#cassandra.cluster.Cluster.protocol_version
+[2024-04-08T14:55:58.800+0000] {table.py:65} INFO - Sensor check existence of table: users
+[2024-04-08T14:55:58.828+0000] {base.py:83} INFO - Using connection ID 'cassandra_conn' for task execution.
+[2024-04-08T14:55:58.838+0000] {cassandra.py:128} WARNING - Downgrading core protocol version from 66 to 65 for 172.21.0.4:9042. To avoid this, it is best practice to explicitly set Cluster(protocol_version) to the version supported by your cluster. http://datastax.github.io/python-driver/api/cassandra/cluster.html#cassandra.cluster.Cluster.protocol_version
+[2024-04-08T14:55:58.845+0000] {cassandra.py:128} WARNING - Downgrading core protocol version from 65 to 5 for 172.21.0.4:9042. To avoid this, it is best practice to explicitly set Cluster(protocol_version) to the version supported by your cluster. http://datastax.github.io/python-driver/api/cassandra/cluster.html#cassandra.cluster.Cluster.protocol_version
+[2024-04-08T14:56:59.026+0000] {table.py:65} INFO - Sensor check existence of table: users
+[2024-04-08T14:56:59.411+0000] {base.py:83} INFO - Using connection ID 'cassandra_conn' for task execution.
+[2024-04-08T14:56:59.515+0000] {cassandra.py:128} WARNING - Downgrading core protocol version from 66 to 65 for 172.21.0.4:9042. To avoid this, it is best practice to explicitly set Cluster(protocol_version) to the version supported by your cluster. http://datastax.github.io/python-driver/api/cassandra/cluster.html#cassandra.cluster.Cluster.protocol_version
+[2024-04-08T14:56:59.546+0000] {cassandra.py:128} WARNING - Downgrading core protocol version from 65 to 5 for 172.21.0.4:9042. To avoid this, it is best practice to explicitly set Cluster(protocol_version) to the version supported by your cluster. http://datastax.github.io/python-driver/api/cassandra/cluster.html#cassandra.cluster.Cluster.protocol_version
+[2024-04-08T14:56:59.966+0000] {base.py:295} INFO - Success criteria met. Exiting.
+[2024-04-08T14:57:00.064+0000] {taskinstance.py:1149} INFO - Marking task as SUCCESS. dag_id=cassandra_sensor_dag, task_id=cassandra_sensor, execution_date=20240408T001000, start_date=20240408T145354, end_date=20240408T145700
+[2024-04-08T14:57:00.304+0000] {local_task_job_runner.py:234} INFO - Task exited with return code 0
+[2024-04-08T14:57:01.382+0000] {taskinstance.py:3312} INFO - 0 downstream tasks scheduled from follow-on schedule check
